@@ -3,7 +3,17 @@ body {
   background-color: rgb(161, 146, 146);
 }
 
-/* Simple CSS styling for NavBar */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+.content {
+  flex: 1; /* Takes up the remaining space */
+}
+
+/* Nav Bar Styles */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -12,7 +22,7 @@ body {
   background-color: #4f0000;
 }
 
-.navbar .logo a{
+.navbar .logo a {
   margin: 0;
   font-size: 36px;
   color: white;
@@ -38,4 +48,51 @@ body {
 
 .nav-links a:hover {
   color: #ddd;
+}
+
+
+/* Footer Styles */
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links li {
+  display: inline;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
 }
