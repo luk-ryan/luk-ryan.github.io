@@ -104,6 +104,7 @@ body {
 .home-introduction {
   display: flex-box;
   padding: 5%;
+  margin-bottom: 5%;
   background-color: #bc3e3e;
   text-align: center;
 }
@@ -154,4 +155,27 @@ body {
 
 .home-projects .button-link:hover {
   background-color: #760000;
+}
+
+/* All Pages */
+
+.introduction {
+  display: flex-box;
+  padding: 5%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  background-color: #bc3e3e;
+  text-align: left;
+}
+
+.introduction h1 {
+  font-size: 48px;
+  margin-left: 200px;
+  font-weight: bold;
+}
+
+.introduction p {
+  font-size: 18px;
+  color: black;
+  margin-left: 200px;
 }
