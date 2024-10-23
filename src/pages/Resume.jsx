@@ -10,7 +10,7 @@ const Resume = () => {
           download below.
         </p>
       </div>
-      <div>
+      <div className="content">
         <h1>Application Programmer</h1>
         <h2>Ontario Ministry of Health</h2>
         <h3>Sept 2022 - April 2023 (Full-Time)</h3>
@@ -26,21 +26,18 @@ const Resume = () => {
           across the province.
         </p>
         <h1>Summary</h1>
-        <p>
-          <ul>
-            <li>Worked with Microsoft PowerApps to manage Web Application</li>
-            <li>Used SQL to query from the Web Application </li>
-            <li>
-              Utilised Power Automate to create functionality for Web
-              Application
-            </li>
-            <li>Collaborated with a team using Azure DevOps to manage tasks</li>
-            <li>
-              Employed the Software Development Life Cycle (SDLC) throughout the
-              course of the project
-            </li>
-          </ul>
-        </p>
+        <ul>
+          <li>Worked with Microsoft PowerApps to manage Web Application</li>
+          <li>Used SQL to query from the Web Application </li>
+          <li>
+            Utilised Power Automate to create functionality for Web Application
+          </li>
+          <li>Collaborated with a team using Azure DevOps to manage tasks</li>
+          <li>
+            Employed the Software Development Life Cycle (SDLC) throughout the
+            course of the project
+          </li>
+        </ul>
       </div>
     </>
   );

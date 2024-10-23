@@ -13,19 +13,21 @@ const Home = () => {
           interested in a variety of programming projects
         </p>
       </div>
-      <div className="home-projects">
-        <h1>My Projects</h1>
-        <p>Description</p>
-        <Link className="button-link" to="/projects">
-          View Projects
-        </Link>
-      </div>
-      <div className="home-projects">
-        <h1>Work Experience</h1>
-        <p>Description</p>
-        <Link className="button-link" to="/resume">
-          View Resume
-        </Link>
+      <div className="content">
+        <div className="home-projects">
+          <h1>My Projects</h1>
+          <p>Description</p>
+          <Link className="button-link" to="/projects">
+            View Projects
+          </Link>
+        </div>
+        <div className="home-projects">
+          <h1>Work Experience</h1>
+          <p>Description</p>
+          <Link className="button-link" to="/resume">
+            View Resume
+          </Link>
+        </div>
       </div>
     </>
   );
