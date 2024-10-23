@@ -34,7 +34,7 @@ body {
 }
 
 .nav-links {
-  margin:0;
+  margin: 0;
   list-style-type: none;
   display: flex;
   height: 100%;
@@ -170,17 +170,22 @@ body {
 }
 
 /* Resume Page */
-
 .resume {
-  margin-left: 20%;
-  margin-right: 20%;
+  
 }
 
 /* About Me Page*/
 
-.about-me {
-  margin-left: 20%;
-  margin-right: 20%;
+.about-me h2 {
+  font-size: 48px;
+}
+
+.about-me h3 {
+  font-size: 28px;
+}
+
+.about-me p {
+  font-size: 18px;
 }
 
 /* All Pages */
@@ -189,7 +194,7 @@ body {
   display: flex-box;
   padding: 5%;
   margin-top: 2%;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
   background-color: #bc3e3e;
   text-align: left;
 }

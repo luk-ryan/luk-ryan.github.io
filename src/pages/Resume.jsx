@@ -10,7 +10,7 @@ const Resume = () => {
           download below.
         </p>
       </div>
-      <div className="content">
+      <div className="content resume">
         <h1>Application Programmer</h1>
         <h2>Ontario Ministry of Health</h2>
         <h3>Sept 2022 - April 2023 (Full-Time)</h3>

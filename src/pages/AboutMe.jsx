@@ -7,7 +7,7 @@ const AboutMe = () => {
         <h1>About Me</h1>
         <p>This is Me!</p>
       </div>
-      <div className="content">
+      <div className="content about-me">
         <p>
           Hi, my name is Ryan Luk. I am currently in my last year of studying
           Computer Science at York University. One of the most satisfying things
