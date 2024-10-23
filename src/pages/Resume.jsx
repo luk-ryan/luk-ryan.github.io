@@ -38,6 +38,21 @@ const Resume = () => {
             course of the project
           </li>
         </ul>
+        <h1>My Resume</h1>
+        <a href="/my-pdf-file.pdf" download="my-pdf-file.pdf">
+          <button>
+            {/* <FontAwesomeIcon icon={faDownload} style={{ marginRight: "8px" }} /> */}
+            Download PDF
+          </button>
+        </a>
+        <p>If the resume is not loading, please try refreshing the page.</p>
+
+        <iframe
+          id="resume-pdf"
+          src="public/resume.pdf"
+          width="100%"
+          height="800px"
+        />
       </div>
     </>
   );
