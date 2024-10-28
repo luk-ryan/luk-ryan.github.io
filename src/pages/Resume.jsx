@@ -39,7 +39,7 @@ const Resume = () => {
           </li>
         </ul>
         <h1>My Resume</h1>
-        <a href="/my-pdf-file.pdf" download="my-pdf-file.pdf">
+        <a href="/public/resume.pdf" download="resume_ryan_luk.pdf">
           <button>
             {/* <FontAwesomeIcon icon={faDownload} style={{ marginRight: "8px" }} /> */}
             Download PDF
