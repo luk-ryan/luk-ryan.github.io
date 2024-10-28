@@ -12,7 +12,7 @@ const AboutMe = () => {
           Hi, my name is Ryan Luk. I am currently in my last year of studying
           Computer Science at York University. One of the most satisfying things
           for me is when I am able to understand complicated concepts and solve
-          complicated problems. I also really enjoy learning new things in
+          complex problems. I also really enjoy learning new things in
           general, which many of my hobbies/interests are centered around. My
           main interests outside of programming include playing piano and
           karate. Recently, I've been learning tricking, which is like a

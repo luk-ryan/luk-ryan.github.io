@@ -193,9 +193,7 @@ body {
   width: 50%;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: #bc3e3e;
   border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact h2 {
@@ -223,7 +221,7 @@ body {
   border-radius: 4px;
   font-size: 1rem;
   resize: vertical;
-  background-color: #ffffffad;
+  background-color: #ffffff;
   color: #000000;
 }
 
