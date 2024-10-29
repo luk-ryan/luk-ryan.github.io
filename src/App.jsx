@@ -5,9 +5,9 @@ import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import ProjectDetail from "./pages/ProjectDetail";
 import Resume from "./pages/Resume";
 import "./index.css";
-
 
 function App() {
   return (
@@ -18,12 +18,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:projectId/:projectTitle" element={<ProjectDetail />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
-      <div className="content">
-      </div>
+      <div className="content"></div>
       <Footer />
     </div>
   );
