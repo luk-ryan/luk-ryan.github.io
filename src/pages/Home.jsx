@@ -16,14 +16,14 @@ const Home = () => {
       <div className="content">
         <div className="home-projects">
           <h1>My Projects</h1>
-          <p>Description</p>
+          <p>Showcase of projects I've done in the past.</p>
           <Link className="button-link" to="/projects">
             View Projects
           </Link>
         </div>
         <div className="home-projects">
           <h1>Work Experience</h1>
-          <p>Description</p>
+          <p>Record of all my work history.</p>
           <Link className="button-link" to="/resume">
             View Resume
           </Link>

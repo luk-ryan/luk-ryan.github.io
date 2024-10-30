@@ -9,7 +9,18 @@ const Contact = () => {
 
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [copyMessage, setCopyMessage] = useState("");
 
+  const emailAddress = "ryankdluk@gmail.com";
+
+    // Handle copying email to clipboard
+    const copyToClipboard = () => {
+      navigator.clipboard.writeText(emailAddress).then(() => {
+        setCopyMessage("Email copied to clipboard!");
+        setTimeout(() => setCopyMessage(""), 2000); // Clear message after 2 seconds
+      });
+    };
+  
   // Handle form input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -49,8 +60,25 @@ const Contact = () => {
       <div className="introduction">
         <h1>Contact Me</h1>
         <p>
-          Feel free to send me a message at ryankdluk@gmail.com or get in touch
-          with me through LinkedIn.
+          Click to copy my email:{" "}
+          <span
+            onClick={copyToClipboard}
+            style={{ color: "blue", cursor: "pointer", textDecoration: "underline" }}
+          >
+            {emailAddress}
+          </span>
+        </p>
+        {copyMessage && <p style={{ color: "green" }}>{copyMessage}</p>}
+        <p>
+          Or get in touch with me through{" "}
+          <a
+            href="https://linkedin.com/in/ryan-k-luk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          .
         </p>
       </div>
       <div className="contact">

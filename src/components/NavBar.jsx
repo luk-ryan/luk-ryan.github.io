@@ -21,7 +21,9 @@ const NavBar = () => {
         <li>
           <Link
             to="/projects"
-            className={location.pathname === "/projects" ? "active" : ""}
+            className={
+              location.pathname.startsWith("/projects") ? "active" : ""
+            }
           >
             Projects
           </Link>
