@@ -12,6 +12,12 @@ const ProjectCard = ({ name, description, githubLink }) => {
     <div className="project-card">
       <div className="project-header">
         <h2>{name}</h2>
+        <p>{description}</p>
+      </div>
+      <div className="project-links">
+        <Link className="button-link" to={`/projects/${formatTitle(name)}`}>
+          View Details
+        </Link>
         <a
           href={githubLink}
           target="_blank"
@@ -21,10 +27,6 @@ const ProjectCard = ({ name, description, githubLink }) => {
           <FontAwesomeIcon icon={faGithub} /> Source Code
         </a>
       </div>
-      <p>{description}</p>
-      <Link className="button-link" to={`/projects/${formatTitle(name)}`}>
-        View Details
-      </Link>
     </div>
   );
 };

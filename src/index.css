@@ -43,7 +43,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: var(--accent-color);
-  height: 8%;
+  height: 5em;
 }
 
 .navbar .logo {
@@ -152,6 +152,7 @@ body {
 .home-introduction p {
   font-size: var(--font-small);
   color: var(--main-text-color);
+  line-height: 1.5;
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -230,6 +231,13 @@ body {
   color: var(--white-hover);
 }
 
+.project-links {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+
+}
+
 .project-github {
   font-size: var(--font-small);
   color: var(--accent-color);
@@ -258,8 +266,6 @@ body {
 }
 
 /* ----- ----- ----- Resume Page ----- ----- ----- */
-
-/* Resume Page */
 
 .resume h1 {
   font-size: var(--font-medium);
@@ -467,6 +473,6 @@ iframe#resume-pdf {
 .content {
   margin-top: 6em;
   margin-bottom: 6em;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
