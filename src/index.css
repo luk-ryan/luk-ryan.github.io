@@ -48,8 +48,8 @@ body {
 
 .navbar .logo a {
   margin: 0;
-  margin-left: 10px;
-  font-size: var(--font-large);
+  margin-left: 20px;
+  font-size: var(--font-medium);
   color: var(--footer-text-color);
   text-decoration: none;
   font-weight: bold;

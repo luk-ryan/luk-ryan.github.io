@@ -20,7 +20,7 @@ const Projects = () => {
         <h1>Projects</h1>
         <p>Here are projects I've done in the past.</p>
       </div>
-      <div className="projects">
+      <div className="content projects">
         <Link to={`/projects/${formatTitle(projects[0].name)}`}>
           <h2>{projects[0].name}</h2>
         </Link>
