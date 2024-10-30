@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,14 +15,14 @@ const Contact = () => {
 
   const emailAddress = "ryankdluk@gmail.com";
 
-    // Handle copying email to clipboard
-    const copyToClipboard = () => {
-      navigator.clipboard.writeText(emailAddress).then(() => {
-        setCopyMessage("Email copied to clipboard!");
-        setTimeout(() => setCopyMessage(""), 2000); // Clear message after 2 seconds
-      });
-    };
-  
+  // Handle copying email to clipboard
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(emailAddress).then(() => {
+      setCopyMessage("Email copied to clipboard!");
+      setTimeout(() => setCopyMessage(""), 2000); // Clear message after 2 seconds
+    });
+  };
+
   // Handle form input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -61,10 +63,7 @@ const Contact = () => {
         <h1>Contact Me</h1>
         <p>
           Click to copy my email:{" "}
-          <span
-            onClick={copyToClipboard}
-            style={{ color: "blue", cursor: "pointer", textDecoration: "underline" }}
-          >
+          <span className="text-link" onClick={copyToClipboard}>
             {emailAddress}
           </span>
         </p>
@@ -72,11 +71,12 @@ const Contact = () => {
         <p>
           Or get in touch with me through{" "}
           <a
+            className="text-link"
             href="https://linkedin.com/in/ryan-k-luk"
             target="_blank"
             rel="noopener noreferrer"
           >
-            LinkedIn
+            LinkedIn <FontAwesomeIcon icon={faLinkedin} />
           </a>
           .
         </p>
@@ -119,7 +119,9 @@ const Contact = () => {
             {errors.message && <p style={{ color: "red" }}>{errors.message}</p>}
           </div>
 
-          <button type="submit">Submit</button>
+          <button className="button-link" type="submit">
+            Submit
+          </button>
         </form>
       </div>
     </>
