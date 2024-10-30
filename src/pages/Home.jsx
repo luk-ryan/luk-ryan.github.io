@@ -10,7 +10,7 @@ const Home = () => {
           My name is Ryan Luk, a professional programmer and student. I'm in my
           fourth year of studying Computer Science at York University. Most of
           my experience is in any kind of web development, but I would also be
-          interested in a variety of programming projects
+          interested in a variety of programming projects.
         </p>
       </div>
       <div className="content">

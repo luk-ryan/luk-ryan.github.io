@@ -12,11 +12,11 @@ const AboutMe = () => {
           Hi, my name is Ryan Luk. I am currently in my last year of studying
           Computer Science at York University. One of the most satisfying things
           for me is when I am able to understand complicated concepts and solve
-          complex problems. I also really enjoy learning new things in
-          general, which many of my hobbies/interests are centered around. My
-          main interests outside of programming include playing piano and
-          karate. Recently, I've been learning tricking, which is like a
-          combination of gymnastics tumbling, martial art kicks, and flips.
+          complex problems. I also really enjoy learning new things in general,
+          which many of my hobbies/interests are centered around. My main
+          interests outside of programming include playing piano and karate.
+          Recently, I've been learning tricking, which is like a combination of
+          gymnastics tumbling, martial art kicks, and flips.
         </p>
         <h2>Education</h2>
         <p>
@@ -52,14 +52,16 @@ const AboutMe = () => {
 
         <h3>Other</h3>
         <p>Here are other concepts/courses I've studied: </p>
-        <ul>
-          <li>Operating System Fundamentals</li>
-          <li>Database Management Systems</li>
-          <li>Software Design</li>
-          <li>User Interfaces</li>
-          <li>Discrete Mathematics and Logic for Computer Science</li>
-          <li>Statistics</li>
-        </ul>
+        <p>
+          <ul>
+            <li>Operating System Fundamentals</li>
+            <li>Database Management Systems</li>
+            <li>Software Design</li>
+            <li>User Interfaces</li>
+            <li>Discrete Mathematics and Logic for Computer Science</li>
+            <li>Statistics</li>
+          </ul>
+        </p>
 
         <h2>Hobbies and Interests</h2>
         <h3>Piano</h3>
