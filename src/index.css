@@ -1,26 +1,26 @@
 :root {
   /* Color Variables */
-  --bg-color: rgb(161, 146, 146);
-  --navbar-bg: #4f0000;
+  --main-color: #bc3e3e;
+  --background-color: #a19292;
+  --accent-color: #4f0000;
   --navbar-hover: #3e0808;
   --footer-bg: #333;
-  --footer-text-color: #ffffff;
-  --button-bg: #4f0000;
-  --button-hover: #760000;
-  --intro-bg: #bc3e3e;
-  --text-color: #000000;
+  --secondary-text-color: #ffffff;
+  --white-hover: #cccccc;
+  --accent-hover: #760000;
+  --main-text-color: #000000;
 
   /* Font Variables */
   --font-family: Arial, sans-serif;
-  --font-large: 64px;
-  --font-medium: 36px;
-  --font-small: 18px;
-  --font-xsmall: 14px;
+  --font-large: 5em;
+  --font-medium: 3em;
+  --font-small: 1.5em;
+  --font-xsmall: 1em;
 }
 
 body {
   margin: 0;
-  background-color: var(--bg-color);
+  background-color: var(--background-color);
   font-family: var(--font-family);
 }
 
@@ -42,17 +42,26 @@ body {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--navbar-bg);
-  height: 10%;
+  background-color: var(--accent-color);
+  height: 8%;
+}
+
+.navbar .logo {
+  height: 100%;
 }
 
 .navbar .logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
-  margin-left: 20px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   font-size: var(--font-medium);
-  color: var(--footer-text-color);
+  color: var(--secondary-text-color);
   text-decoration: none;
   font-weight: bold;
+  height: 100%;
 }
 
 .nav-links {
@@ -65,21 +74,22 @@ body {
 .nav-links li {
   display: block;
   height: 100%;
-  width: 140px;
+  width: 11rem;
 }
 
 .nav-links a {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--footer-text-color);
+  color: var(--secondary-text-color);
   text-decoration: none;
   font-size: var(--font-small);
   width: 100%;
   height: 100%;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover,
+.nav-links a.active {
   background-color: var(--navbar-hover);
 }
 
@@ -87,7 +97,7 @@ body {
 
 .footer {
   background-color: var(--footer-bg);
-  color: var(--footer-text-color);
+  color: var(--secondary-text-color);
   padding: 40px 0;
   text-align: center;
 }
@@ -114,22 +124,23 @@ body {
 }
 
 .social-links a {
-  color: var(--footer-text-color);
+  color: var(--secondary-text-color);
   text-decoration: none;
   font-size: var(--font-small);
 }
 
 .social-links a:hover {
   text-decoration: underline;
+  color: var(--white-hover);
 }
 
 /* ----- ----- ----- Home Page ----- ----- ----- */
 
 .home-introduction {
-  display: flex-box;
+  display: flex;
+  flex-direction: column;
   padding: 5%;
-  margin-bottom: 5%;
-  background-color: var(--intro-bg);
+  background-color: var(--main-color);
   text-align: center;
 }
 
@@ -140,52 +151,34 @@ body {
 
 .home-introduction p {
   font-size: var(--font-small);
-  color: var(--text-color);
-  margin-left: 200px;
-  margin-right: 200px;
+  color: var(--main-text-color);
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
-.home-projects {
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+}
+
+.home-card {
   display: flex;
   flex-direction: column;
   padding: 7%;
-  margin-bottom: 10%;
-  border: 4px solid black;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
-  background-color: var(--intro-bg);
+  background-color: var(--main-color);
 }
 
-.home-projects h1 {
+.home-card h1 {
   margin: 0;
+  font-size: var(--font-medium);
 }
 
-.home-projects p {
-  margin: 50px;
-}
-
-/* Button Link */
-.home-projects .button-link {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 5px;
+.home-card p {
+  margin: 2em;
   font-size: var(--font-small);
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  color: var(--footer-text-color);
-  background-color: var(--button-bg);
-  border-radius: 5px;
-  transition: background-color 0.3s, border-color 0.3s;
-}
-
-.home-projects .button-link:hover {
-  background-color: var(--button-hover);
-}
-
-/* ----- ----- ----- Resume Page ----- ----- ----- */
-
-.resume {
-  /* Add your resume styles here */
 }
 
 /* ----- ----- ----- About Me Page ----- ----- ----- */
@@ -195,18 +188,175 @@ body {
 }
 
 .about-me h3 {
-  font-size: 28px;
+  font-size: var(--font-medium);
 }
 
 .about-me p {
   font-size: var(--font-small);
+  line-height: 1.5;
+}
+
+/* ----- ----- ----- Projects Page ----- ----- ----- */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-card {
+  padding: 3em;
+  background-color: var(--main-color);
+  border-radius: 20px;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
+  color: var(--secondary-text-color);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--main-text-color);
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.project-header h2 {
+  color: var(--secondary-text-color);
+  font-size: var(--font-medium);
+}
+
+.project-header h2 a:hover {
+  color: var(--white-hover);
+}
+
+.project-github {
+  font-size: var(--font-small);
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.project-github:hover {
+  color: var(--accent-hover);
+}
+
+.project-card p {
+  font-size: var(--font-small);
+  color: var(--main-text-color);
+  line-height: 1.5;
+}
+
+/* ------ ------ Project Details Page ------ ------ */
+
+.project-details h2 {
+  font-size: var(--font-medium);
+}
+
+.project-details p {
+  font-size: var(--font-small);
+  line-height: 1.5;
+}
+
+/* ----- ----- ----- Resume Page ----- ----- ----- */
+
+/* Resume Page */
+
+.resume h1 {
+  font-size: var(--font-medium);
+  text-align: center;
+}
+
+.job {
+  margin-bottom: 3%;
+  padding: 2em;
+  background-color: var(--main-color);
+  border-radius: 20px;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 1em;
+}
+
+.job-information h1 {
+  font-size: var(--font-medium);
+  color: var(--secondary-text-color);
+}
+
+.job-information h2 {
+  font-size: var(--font-small);
+  color: var(--accent-color);
+}
+
+.job-information h3 {
+  font-size: var(--font-small);
+  color: var(--accent-color);
+  font-style: italic;
+}
+
+.job-description p {
+  font-size: var(--font-small);
+  color: var(--main-text-color);
+  line-height: 1.5;
+  margin-top: 1em;
+}
+
+.resume li {
+  font-size: var(--font-small);
+  line-height: 1.6;
+  margin-bottom: 0.5em;
+}
+
+.resume-section {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.resume-section h1 {
+  font-size: var(--font-medium);
+  margin-top: 2em;
+}
+
+.resume-section a button {
+  padding: 10px 20px;
+  font-size: var(--font-small);
+  font-weight: bold;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.resume-section a button:hover {
+  background-color: var(--accent-hover);
+}
+
+.resume-section p {
+  font-size: var(--font-small);
+  color: var(--main-text-color);
+  margin-top: 1em;
+}
+
+iframe#resume-pdf {
+  width: 100%;
+  height: 1000px;
+  border: none;
+  margin-top: 1em;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* ----- ----- ----- Contact Page ----- ----- ----- */
 
 .contact {
   width: 50%;
-  margin: 2rem auto;
+  margin: 6rem auto;
   padding: 2rem;
   border-radius: 8px;
 }
@@ -224,6 +374,7 @@ body {
 .contact label {
   margin-bottom: 0.5rem;
   font-weight: bold;
+  font-size: var(--font-small);
 }
 
 .contact input[type="text"],
@@ -232,73 +383,90 @@ body {
   width: 100%;
   padding: 0.75rem;
   margin-bottom: 1rem;
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--main-text-color);
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: var(--font-small);
   resize: vertical;
-  background-color: var(--footer-text-color);
-  color: var(--text-color);
+  background-color: var(--secondary-text-color);
+  color: var(--main-text-color);
 }
 
 .contact input[type="text"]:focus,
 .contact input[type="email"]:focus,
 .contact textarea:focus {
-  border-color: var(--navbar-bg);
+  border-color: var(--accent-color);
   outline: none;
-}
-
-.contact button {
-  padding: 0.75rem;
-  border: none;
-  border-radius: 4px;
-  background-color: var(--button-bg);
-  color: var(--footer-text-color);
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact button:hover {
-  background-color: var(--button-hover);
 }
 
 .contact p {
   color: green;
-  font-size: 0.9rem;
+  font-size: var(--font-xsmall);
   margin-top: 1rem;
   text-align: center;
 }
 
 .contact p[style*="color: red"] {
   margin-top: -0.5rem;
-  font-size: 0.8rem;
+  font-size: var(--font-xsmall);
 }
 
 /* ----- ----- ----- All Pages ----- ----- ----- */
 
 .introduction {
-  display: flex-box;
+  display: flex;
+  flex-direction: column;
   padding: 5%;
   margin-top: 2%;
   margin-bottom: 1%;
-  background-color: var(--intro-bg);
+  background-color: var(--main-color);
   text-align: left;
 }
 
 .introduction h1 {
-  font-size: 48px;
+  font-size: 5rem;
   margin-left: 200px;
   font-weight: bold;
 }
 
 .introduction p {
   font-size: var(--font-small);
-  color: var(--text-color);
+  color: var(--main-text-color);
   margin-left: 200px;
 }
 
+/* Button Link */
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: var(--font-small);
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.button-link:hover {
+  background-color: var(--accent-hover);
+  cursor: pointer;
+}
+
+.text-link {
+  text-decoration: underline 4px;
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.text-link:hover {
+  text-decoration: underline 5px;
+  color: var(--accent-hover);
+}
+
 .content {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-top: 6em;
+  margin-bottom: 6em;
+  margin-left: 25%;
+  margin-right: 25%;
 }
