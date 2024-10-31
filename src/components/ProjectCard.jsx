@@ -18,14 +18,16 @@ const ProjectCard = ({ name, description, githubLink }) => {
         <Link className="button-link" to={`/projects/${formatTitle(name)}`}>
           View Details
         </Link>
-        <a
-          href={githubLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="project-github"
-        >
-          <FontAwesomeIcon icon={faGithub} /> Source Code
-        </a>
+        <p>
+          <a
+            className="text-link"
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} /> Source Code
+          </a>
+        </p>
       </div>
     </div>
   );

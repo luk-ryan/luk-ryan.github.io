@@ -18,6 +18,7 @@ const ProjectDetail = () => {
           </p>
           <p>
             <a
+              className="text-link"
               href="https://github.com/luk-ryan/StudentManagementSystemV2"
               target="_blank"
               rel="noopener noreferrer"

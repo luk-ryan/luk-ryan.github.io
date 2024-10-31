@@ -61,7 +61,9 @@ body {
 
 /* Button Link */
 .button-link {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px 20px;
   font-size: var(--font-small);
   font-weight: bold;
@@ -69,7 +71,7 @@ body {
   text-decoration: none;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
-  border-radius: 5px;
+  border-radius: 10px;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
@@ -327,16 +329,6 @@ body {
   margin-top: 2em;
   display: flex;
   justify-content: space-between;
-}
-
-.project-github {
-  font-size: var(--font-small);
-  color: var(--accent-color);
-  text-decoration: none;
-}
-
-.project-github:hover {
-  color: var(--accent-hover);
 }
 
 .project-card p {
