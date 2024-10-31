@@ -52,16 +52,14 @@ const AboutMe = () => {
 
         <h3>Other</h3>
         <p>Here are other concepts/courses I've studied: </p>
-        <p>
-          <ul>
-            <li>Operating System Fundamentals</li>
-            <li>Database Management Systems</li>
-            <li>Software Design</li>
-            <li>User Interfaces</li>
-            <li>Discrete Mathematics and Logic for Computer Science</li>
-            <li>Statistics</li>
-          </ul>
-        </p>
+        <ul>
+          <li>Operating System Fundamentals</li>
+          <li>Database Management Systems</li>
+          <li>Software Design</li>
+          <li>User Interfaces</li>
+          <li>Discrete Mathematics and Logic for Computer Science</li>
+          <li>Statistics</li>
+        </ul>
 
         <h2>Hobbies and Interests</h2>
         <h3>Piano</h3>
@@ -94,9 +92,9 @@ const AboutMe = () => {
           called The Monkey Vault. Initially, I wanted to train for stunts—I’ve
           always admired my cousin, who works as a stunt double, and thought it
           could be a unique career path. But after watching trickers pull off
-          impressive combos, I decided to focus on tricking instead. I also
-          had the idea of teaching it as a new martial arts style at the dojo
-          where I currently instruct.
+          impressive combos, I decided to focus on tricking instead. I also had
+          the idea of teaching it as a new martial arts style at the dojo where
+          I currently instruct.
         </p>
         <p>
           When I first started tricking, I picked up the basics quickly—even the

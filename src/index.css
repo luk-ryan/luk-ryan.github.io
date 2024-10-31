@@ -158,27 +158,49 @@ body {
 }
 
 .home {
+  margin-top: 6em;
+  margin-bottom: 6em;
   display: flex;
-  flex-direction: column;
-  gap: 6em;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5em;
 }
 
 .home-card {
   display: flex;
   flex-direction: column;
-  padding: 7%;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 25em;
+  height: 20em;
+  padding: 2em;
+  text-decoration: none;
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
-  background-color: var(--main-color);
+  background-color: var(--accent-color);
+  transition: background-color 1s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.home-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px 6px rgba(0, 0, 0, 0.6);
+  background-color: var(--accent-hover);
+  cursor: pointer;
 }
 
 .home-card h1 {
+  color: var(--secondary-text-color);
   margin: 0;
   font-size: var(--font-medium);
 }
 
 .home-card p {
-  margin: 2em;
+  font-style: italic;
+  text-align: center;
+  color: var(--secondary-text-color);
+  margin: 0;
   font-size: var(--font-small);
 }
 
@@ -195,6 +217,12 @@ body {
 .about-me p {
   font-size: var(--font-small);
   line-height: 1.5;
+}
+
+.about-me li {
+  font-size: var(--font-small);
+  line-height: 1.5;
+  margin-bottom: 0.5em;
 }
 
 /* ----- ----- ----- Projects Page ----- ----- ----- */
@@ -235,7 +263,6 @@ body {
   margin-top: 2em;
   display: flex;
   justify-content: space-between;
-
 }
 
 .project-github {
@@ -314,7 +341,7 @@ body {
 
 .resume li {
   font-size: var(--font-small);
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 0.5em;
 }
 

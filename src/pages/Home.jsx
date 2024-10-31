@@ -13,23 +13,28 @@ const Home = () => {
           interested in a variety of programming projects.
         </p>
       </div>
-      <div className="content">
-        <div className="home">
-          <div className="home-card">
-            <h1>My Projects</h1>
-            <p>Showcase of projects I've done in the past.</p>
-            <Link className="button-link" to="/projects">
-              View Projects
-            </Link>
-          </div>
-          <div className="home-card">
-            <h1>Work Experience</h1>
-            <p>Record of all my work history.</p>
-            <Link className="button-link" to="/resume">
-              View Resume
-            </Link>
-          </div>
-        </div>
+      <div className="home">
+        <Link className="home-card" to="/about">
+          <h1>About Me</h1>
+          <p>
+            Learn more about my personal journey, both educationally and outside
+            of school.
+          </p>
+        </Link>
+        <Link className="home-card" to="/projects">
+          <h1>My Projects</h1>
+          <p>Showcase of projects I've done in the past.</p>
+        </Link>
+        <Link className="home-card" to="/resume">
+          <h1>Resume</h1>
+          <p>Record of all my work history.</p>
+        </Link>
+        <Link className="home-card" to="/contact">
+          <h1>Contact Me</h1>
+          <p>
+            Have any questions or feedback? Feel free to get in touch with me!
+          </p>
+        </Link>
       </div>
     </>
   );
