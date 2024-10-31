@@ -12,6 +12,7 @@ const Contact = () => {
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [copyMessage, setCopyMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState(false); // Track success message visibility
 
   const emailAddress = "ryankdluk@gmail.com";
 
@@ -19,7 +20,7 @@ const Contact = () => {
   const copyToClipboard = () => {
     navigator.clipboard.writeText(emailAddress).then(() => {
       setCopyMessage("Email copied to clipboard!");
-      setTimeout(() => setCopyMessage(""), 2000); // Clear message after 2 seconds
+      setTimeout(() => setCopyMessage(""), 2000);
     });
   };
 
@@ -49,6 +50,11 @@ const Contact = () => {
     if (Object.keys(validationErrors).length === 0) {
       setIsSubmitted(true);
       console.log("Form submitted successfully:", formData);
+
+      // Set success message and timeout to hide it
+      setSuccessMessage(true);
+      setTimeout(() => setSuccessMessage(false), 3000); // Hide after 3 seconds
+
       // Clear form (optional)
       setFormData({ name: "", email: "", message: "" });
       setErrors({});
@@ -82,7 +88,7 @@ const Contact = () => {
         </p>
       </div>
       <div className="contact">
-        {isSubmitted && <p>Thank you for your message!</p>}
+        {successMessage && <p>Thank you for your message!</p>}
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Name:</label>

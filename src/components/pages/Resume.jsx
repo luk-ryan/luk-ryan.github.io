@@ -50,7 +50,7 @@ const Resume = () => {
         </div>
         <div className="resume-section">
           <h1>My Resume</h1>
-          <a href="/public/resume.pdf" download="resume_ryan_luk.pdf">
+          <a href="/resume.pdf" download="resume_ryan_luk.pdf">
             <button>
               {/* <FontAwesomeIcon icon={faDownload} style={{ marginRight: "8px" }} /> */}
               Download PDF
@@ -60,7 +60,7 @@ const Resume = () => {
 
           <iframe
             id="resume-pdf"
-            src="public/resume.pdf"
+            src="/resume.pdf"
             width="100%"
             height="800px"
           />
