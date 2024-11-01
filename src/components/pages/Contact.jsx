@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ButtonBack from "../ButtonBack";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -86,6 +87,7 @@ const Contact = () => {
           </a>
           .
         </p>
+        <ButtonBack link={"/"} />
       </div>
       <div className="contact">
         {successMessage && <p>Thank you for your message!</p>}

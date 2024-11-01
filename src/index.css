@@ -39,6 +39,7 @@ body {
 
 .introduction {
   display: flex;
+  position: relative;
   flex-direction: column;
   padding: 5%;
   padding-left: 15%;
@@ -132,8 +133,8 @@ body {
 
 .button-back {
   position: absolute;
-  top: -3em;
-  right: 0;
+  bottom: -3em;
+  right: 20%;
 }
 
 .text-link {

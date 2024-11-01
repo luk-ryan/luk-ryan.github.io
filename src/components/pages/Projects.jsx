@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonBack from "../ButtonBack";
 import ProjectCard from "../ProjectCard";
 
 const Projects = () => {
@@ -17,6 +18,7 @@ const Projects = () => {
       <div className="introduction">
         <h1>Projects</h1>
         <p>Here are projects I've done in the past.</p>
+        <ButtonBack link={"/"} />
       </div>
       <div className="content projects">
         {projects.map((project) => (

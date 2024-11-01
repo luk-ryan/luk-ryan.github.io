@@ -1,6 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import ButtonBack from "../../ButtonBack";
 
 const Piano = () => {
   return (
@@ -8,11 +7,9 @@ const Piano = () => {
       <div className="introduction">
         <h1>About Me</h1>
         <p>This is Me!</p>
+        <ButtonBack link={"/about/hobbies"} />
       </div>
       <div className="content about-me">
-        <button className="button-link button-back">
-          <FontAwesomeIcon icon={faArrowLeft} />
-        </button>
         <h2>Piano</h2>
         <p>
           I started learning piano when I was four, beginning with group lessons

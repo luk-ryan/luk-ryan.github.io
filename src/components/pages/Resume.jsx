@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonBack from "../ButtonBack";
 
 const Resume = () => {
   return (
@@ -9,6 +10,7 @@ const Resume = () => {
           Here is all of my work history, my resume is also available for
           download below.
         </p>
+        <ButtonBack link={"/"} />
       </div>
       <div className="content resume">
         <div className="job">

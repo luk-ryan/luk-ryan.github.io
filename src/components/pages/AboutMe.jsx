@@ -1,5 +1,6 @@
 import React from "react";
 import CardLink from "../CardLink";
+import ButtonBack from "../ButtonBack";
 
 const AboutMe = () => {
   return (
@@ -7,6 +8,7 @@ const AboutMe = () => {
       <div className="introduction">
         <h1>About Me</h1>
         <p>This is Me!</p>
+        <ButtonBack link={"/"} />
       </div>
       <div className="card-container">
         <CardLink

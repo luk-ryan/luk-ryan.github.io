@@ -1,6 +1,7 @@
 // src/pages/ProjectDetail.js
 import React from "react";
 import { useParams } from "react-router-dom";
+import ButtonBack from "../ButtonBack";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -26,6 +27,7 @@ const ProjectDetail = () => {
               Source Code <FontAwesomeIcon icon={faGithub} />
             </a>
           </p>
+          <ButtonBack link={"/"} />
         </div>
         <div className="content project-details">
           <h2>Overview</h2>

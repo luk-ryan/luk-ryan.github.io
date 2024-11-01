@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonBack from "../../ButtonBack";
 
 const Tricking = () => {
   return (
@@ -6,6 +7,7 @@ const Tricking = () => {
       <div className="introduction">
         <h1>About Me</h1>
         <p>This is Me!</p>
+        <ButtonBack link={"/about/hobbies"} />
       </div>
       <div className="content about-me">
         <h2>Tricking</h2>

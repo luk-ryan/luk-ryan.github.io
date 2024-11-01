@@ -1,6 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import ButtonBack from "../ButtonBack";
 
 const Education = () => {
   return (
@@ -8,11 +7,9 @@ const Education = () => {
       <div className="introduction">
         <h1>About Me</h1>
         <p>This is Me!</p>
+        <ButtonBack link={"/about"} />
       </div>
       <div className="content about-me">
-        <button className="button-link button-back">
-          <FontAwesomeIcon icon={faArrowLeft} />
-        </button>
         <p>
           Hi, my name is Ryan Luk. I am currently in my last year of studying
           Computer Science at York University. One of the most satisfying things
