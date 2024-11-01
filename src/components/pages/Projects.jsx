@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonBack from "../ButtonBack";
-import ProjectCard from "../ProjectCard";
+import ProjectCard from "../projects/ProjectCard";
 
 const Projects = () => {
   const projects = [

@@ -6,14 +6,14 @@ import Home from "./components/pages/Home";
 import AboutMe from "./components/pages/AboutMe";
 import Contact from "./components/pages/Contact";
 import Projects from "./components/pages/Projects";
-import ProjectDetail from "./components/subpages/ProjectDetail";
+import ProjectDetail from "./components/projects/ProjectDetail";
 import Resume from "./components/pages/Resume";
 import ScrollToTop from "./components/ScrollToTop";
-import Education from "./components/subpages/Education";
-import Hobbies from "./components/subpages/Hobbies";
-import Piano from "./components/subpages/hobbies/Piano";
-import Karate from "./components/subpages/hobbies/Karate";
-import Tricking from "./components/subpages/hobbies/Tricking";
+import Education from "./components/about-me/Education";
+import Hobbies from "./components/about-me/Hobbies";
+import Piano from "./components/about-me/hobbies/Piano";
+import Karate from "./components/about-me/hobbies/Karate";
+import Tricking from "./components/about-me/hobbies/Tricking";
 
 function App() {
   return (
