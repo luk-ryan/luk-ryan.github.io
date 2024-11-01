@@ -6,8 +6,16 @@ const Hobbies = () => {
   return (
     <>
       <div className="introduction">
-        <h1>About Me</h1>
-        <p>This is Me!</p>
+        <h1>Hobbies and Interests</h1>
+        <p>
+          I really enjoy learning new things in general. Here, you can see all
+          of my main hobbies and interests outside of programming.
+        </p>
+        {/* <p>
+          My main interests outside of programming include playing piano and
+          karate. Recently, I've been learning tricking, which is like a
+          combination of gymnastics tumbling, martial art kicks, and flips.
+        </p> */}
         <ButtonBack link={"/about"} />
       </div>
       <div className="card-container">
