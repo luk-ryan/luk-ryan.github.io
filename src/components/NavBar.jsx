@@ -13,7 +13,7 @@ const NavBar = () => {
         <li>
           <Link
             to="/about"
-            className={location.pathname === "/about" ? "active" : ""}
+            className={location.pathname.startsWith("/about") ? "active" : ""}
           >
             About Me
           </Link>

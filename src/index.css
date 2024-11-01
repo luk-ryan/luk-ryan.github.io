@@ -3,7 +3,8 @@
   --main-color: #bc3e3e;
   --background-color: #a19292;
   --accent-color: #4f0000;
-  --navbar-hover: #3e0808;
+  --navbar-color: #3e0301;
+  --navbar-hover: #2f0505;
   --footer-bg: #333;
   --secondary-text-color: #ffffff;
   --white-hover: #cccccc;
@@ -162,7 +163,7 @@ body {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--accent-color);
+  background-color: var(--navbar-color);
   height: 5em;
   z-index: 1000;
 }
