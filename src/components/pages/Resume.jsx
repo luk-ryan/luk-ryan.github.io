@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonBack from "../ButtonBack";
 
 const Resume = () => {
   return (
@@ -9,6 +10,7 @@ const Resume = () => {
           Here is all of my work history, my resume is also available for
           download below.
         </p>
+        <ButtonBack link={"/"} />
       </div>
       <div className="content resume">
         <div className="job">
@@ -51,10 +53,7 @@ const Resume = () => {
         <div className="resume-section">
           <h1>My Resume</h1>
           <a href="/resume.pdf" download="resume_ryan_luk.pdf">
-            <button>
-              {/* <FontAwesomeIcon icon={faDownload} style={{ marginRight: "8px" }} /> */}
-              Download PDF
-            </button>
+            <button>Download PDF</button>
           </a>
           <p>If the resume is not loading, please try refreshing the page.</p>
 
@@ -62,7 +61,7 @@ const Resume = () => {
             id="resume-pdf"
             src="/resume.pdf"
             width="100%"
-            height="800px"
+            height="1000em"
           />
         </div>
       </div>
