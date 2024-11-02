@@ -14,6 +14,8 @@ import Hobbies from "./components/about-me/Hobbies";
 import Piano from "./components/about-me/hobbies/Piano";
 import Karate from "./components/about-me/hobbies/Karate";
 import Tricking from "./components/about-me/hobbies/Tricking";
+import EECS3461 from "./components/about-me/education/EECS3461";
+import EECS3401 from "./components/about-me/education/EECS3401";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutMe />} />
           <Route path="/about/education" element={<Education />} />
+          <Route path="/about/education/EECS3401" element={<EECS3401 />} />
+          <Route path="/about/education/EECS3461" element={<EECS3461 />} />
           <Route path="/about/hobbies" element={<Hobbies />} />
           <Route path="/about/hobbies/piano" element={<Piano />} />
           <Route path="/about/hobbies/karate" element={<Karate />} />

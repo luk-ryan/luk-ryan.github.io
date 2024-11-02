@@ -29,7 +29,7 @@ const ProjectDetail = () => {
           </p>
           <ButtonBack link={"/"} />
         </div>
-        <div className="content project-details">
+        <div className="content">
           <h2>Overview</h2>
           <p>
             This side project aims to assist students in maintaining
