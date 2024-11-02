@@ -13,6 +13,7 @@ const EECS3461 = () => {
         <ButtonBack link={"/about/education"} />
       </div>
       <div className="content">
+        <h2>Final Project</h2>
         <p>
           The biggest component of this course was to decide on a problem and
           come up with a design solution for this problem. As a team of four
@@ -24,6 +25,13 @@ const EECS3461 = () => {
           mobile application, we used Figma to develop a working interactive
           prototype and compiled it into a final report for submission.
         </p>
+        <h3>Report:</h3>
+        <iframe
+          id="education/eecs 3461 - assignment 2.pdf"
+          src="/education/eecs 3461 - assignment 2.pdf"
+          width="100%"
+          height="1000em"
+        />
       </div>
     </>
   );

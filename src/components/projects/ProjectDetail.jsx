@@ -27,7 +27,7 @@ const ProjectDetail = () => {
               Source Code <FontAwesomeIcon icon={faGithub} />
             </a>
           </p>
-          <ButtonBack link={"/"} />
+          <ButtonBack link={"/projects"} />
         </div>
         <div className="content">
           <h2>Overview</h2>

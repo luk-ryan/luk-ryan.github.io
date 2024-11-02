@@ -4,7 +4,7 @@ import CardLink from "../CardLink";
 const Home = () => {
   return (
     <>
-      <div className="home introduction">
+      <div className="home-introduction">
         <h1>Welcome</h1>
         <p>
           My name is Ryan Luk, a professional programmer and student. I'm in my

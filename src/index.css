@@ -288,17 +288,36 @@ body {
 
 /* ----- ----- ----- Home Page ----- ----- ----- */
 
-.home {
+.home-introduction {
+  display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 5%;
+  background-color: var(--main-color);
+  text-align: center;
 }
 
-.home p {
+.home-introduction h1 {
+  font-size: var(--font-xlarge);
+  font-weight: bold;
+}
+
+.home-introduction p {
+  font-size: var(--font-small);
+  color: var(--main-text-color);
+  line-height: 1.5;
   max-width: 60em;
 }
 
 /* ----- ----- ----- About Me Page ----- ----- ----- */
+
+.eecs3401-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 /* ----- ----- ----- Projects Page ----- ----- ----- */
 
