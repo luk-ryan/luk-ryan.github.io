@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import ButtonBack from "../ButtonBack";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -50,15 +51,34 @@ const Contact = () => {
     const validationErrors = validate();
     if (Object.keys(validationErrors).length === 0) {
       setIsSubmitted(true);
-      console.log("Form submitted successfully:", formData);
 
-      // Set success message and timeout to hide it
-      setSuccessMessage(true);
-      setTimeout(() => setSuccessMessage(false), 3000); // Hide after 3 seconds
-
-      // Clear form (optional)
-      setFormData({ name: "", email: "", message: "" });
-      setErrors({});
+      // Configure EmailJS
+      emailjs
+        .send(
+          "service_7k2qffn", // replace with your EmailJS Service ID
+          "template_hit0x5f", // replace with your EmailJS Template ID
+          {
+            from_name: formData.name,
+            from_email: formData.email,
+            message: formData.message,
+          },
+          "IpKvgAkjOAMK9QToj" // replace with your EmailJS Public Key
+        )
+        .then(
+          (response) => {
+            console.log("Email successfully sent:", response);
+            setSuccessMessage(true);
+            setTimeout(() => setSuccessMessage(false), 3000); // Hide after 3 seconds
+            setFormData({ name: "", email: "", message: "" });
+            setErrors({});
+          },
+          (error) => {
+            console.error("Failed to send email:", error);
+            setErrors({
+              email: "Failed to send email. Please try again later.",
+            });
+          }
+        );
     } else {
       setErrors(validationErrors);
     }
@@ -90,7 +110,9 @@ const Contact = () => {
         <ButtonBack link={"/"} />
       </div>
       <div className="contact">
-        {successMessage && <p>Thank you for your message!</p>}
+        {successMessage && (
+          <p>Thank you for your message, I will get back to you soon!</p>
+        )}
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Name:</label>
