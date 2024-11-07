@@ -3,11 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const ProjectCard = ({ name, description, githubLink }) => {
-  const formatTitle = (title) => {
-    return title.toLowerCase().replace(/ /g, "-");
-  };
-
+const ProjectCard = ({ name, description, link, githubLink }) => {
   return (
     <div className="project-card">
       <div className="project-header">
@@ -15,19 +11,21 @@ const ProjectCard = ({ name, description, githubLink }) => {
         <p>{description}</p>
       </div>
       <div className="project-links">
-        <Link className="button-link" to={`/projects/${formatTitle(name)}`}>
+        <Link className="button-link" to={link}>
           View Details
         </Link>
-        <p>
-          <a
-            className="text-link"
-            href={githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faGithub} /> Source Code
-          </a>
-        </p>
+        {githubLink && (
+          <p>
+            <a
+              className="text-link"
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} /> Source Code
+            </a>
+          </p>
+        )}
       </div>
     </div>
   );
