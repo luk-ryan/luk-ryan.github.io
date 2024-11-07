@@ -23,21 +23,23 @@ function App() {
       <Router>
         <ScrollToTop />
         <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutMe />} />
-          <Route path="/about/education" element={<Education />} />
-          <Route path="/about/education/EECS3401" element={<EECS3401 />} />
-          <Route path="/about/education/EECS3461" element={<EECS3461 />} />
-          <Route path="/about/hobbies" element={<Hobbies />} />
-          <Route path="/about/hobbies/piano" element={<Piano />} />
-          <Route path="/about/hobbies/karate" element={<Karate />} />
-          <Route path="/about/hobbies/tricking" element={<Tricking />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/:projectTitle" element={<ProjectDetail />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutMe />} />
+            <Route path="/about/education" element={<Education />} />
+            <Route path="/about/education/EECS3401" element={<EECS3401 />} />
+            <Route path="/about/education/EECS3461" element={<EECS3461 />} />
+            <Route path="/about/hobbies" element={<Hobbies />} />
+            <Route path="/about/hobbies/piano" element={<Piano />} />
+            <Route path="/about/hobbies/karate" element={<Karate />} />
+            <Route path="/about/hobbies/tricking" element={<Tricking />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:projectTitle" element={<ProjectDetail />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
       </Router>
       <Footer />
     </div>

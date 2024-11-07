@@ -38,6 +38,10 @@ body {
   flex: 1;
 }
 
+.main-content {
+  min-height: 100vh;
+}
+
 /* ----- ----- ----- All Pages ----- ----- ----- */
 
 .introduction {
