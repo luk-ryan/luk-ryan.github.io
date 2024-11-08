@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://luk-ryan.github.io/ryan-luk",
+  "homepage": "https://luk-ryan.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
