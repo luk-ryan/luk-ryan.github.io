@@ -6,6 +6,14 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      name: "Bidding Blitz",
+      description:
+        "An e-commerce website built during a course at school, that lets users bid for various items in two different ways, forward and dutch bidding.",
+      link: "/about/education/EECS4413",
+      githubLink: "https://github.com/jamesmqle/BiddingBlitz",
+    },
+    {
+      id: 2,
       name: "Student Management System",
       description:
         "A website that helps students to keep track of their grades in school.",
@@ -13,7 +21,7 @@ const Projects = () => {
       githubLink: "https://github.com/luk-ryan/StudentManagementSystemV2",
     },
     {
-      id: 2,
+      id: 3,
       name: "Project-Based Courses",
       description:
         "Some of the courses I take have cumulative projects that account for majority of class work. Details will be on the Education side of the About Me page",

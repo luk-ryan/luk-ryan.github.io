@@ -28,7 +28,7 @@ const EECS3401 = () => {
           analysed the results, and packaged it together into a report, which
           included a jupyter notebook file with our test results.
         </p>
-        <div className="eecs3401-header">
+        <div className="course-subheading">
           <h3>Report:</h3>
           <p>
             <a

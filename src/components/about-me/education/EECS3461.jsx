@@ -27,7 +27,7 @@ const EECS3461 = () => {
           we used Figma to develop wireframes, as well as a working interactive
           prototype and compiled it into a final report for submission.
         </p>
-        <div className="eecs3401-header">
+        <div className="course-subheading">
           <h3>Report:</h3>
           <p>
             <a
