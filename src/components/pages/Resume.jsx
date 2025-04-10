@@ -52,14 +52,17 @@ const Resume = () => {
         </div>
         <div className="resume-section">
           <h1>My Resume</h1>
-          <a href="/resume.pdf" download="resume_ryan_luk.pdf">
+          <a
+            href="/resume_software_developer.pdf"
+            download="resume_ryan_luk.pdf"
+          >
             <button>Download PDF</button>
           </a>
           <p>If the resume is not loading, please try refreshing the page.</p>
 
           <iframe
             id="resume-pdf"
-            src="/resume.pdf"
+            src="/resume_software_developer.pdf"
             width="100%"
             height="1000em"
           />
