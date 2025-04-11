@@ -59,6 +59,11 @@ const Education = () => {
       </div>
       <div className="card-container" style={{ margin: 0 }}>
         <CardLink
+          title="EECS 4443"
+          description="Mobile User Interfaces"
+          link="/about/education/EECS4443"
+        />
+        <CardLink
           title="EECS 4413"
           description="Building E-Commerce Systems"
           link="/about/education/EECS4413"

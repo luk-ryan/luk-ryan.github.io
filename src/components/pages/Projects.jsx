@@ -6,14 +6,22 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      name: "Big 2 Companion App",
+      description:
+        "A mobile application that assists players while playing the card game Big 2 by tracking scores and progression.",
+      link: "/about/education/EECS4443",
+      githubLink: "https://github.com/luk-ryan/big2",
+    },
+    {
+      id: 2,
       name: "Bidding Blitz",
       description:
-        "An e-commerce website built during a course at school, that lets users bid for various items in two different ways, forward and dutch bidding.",
+        "An e-commerce website that lets users bid for various items in two different ways, forward and dutch bidding.",
       link: "/about/education/EECS4413",
       githubLink: "https://github.com/jamesmqle/BiddingBlitz",
     },
     {
-      id: 2,
+      id: 3,
       name: "Student Management System",
       description:
         "A website that helps students to keep track of their grades in school.",
@@ -21,7 +29,7 @@ const Projects = () => {
       githubLink: "https://github.com/luk-ryan/StudentManagementSystemV2",
     },
     {
-      id: 3,
+      id: 4,
       name: "Project-Based Courses",
       description:
         "Some of the courses I take have cumulative projects that account for majority of class work. Details will be on the Education side of the About Me page",

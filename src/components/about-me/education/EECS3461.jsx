@@ -41,8 +41,8 @@ const EECS3461 = () => {
           </p>
         </div>
         <iframe
-          id="education/eecs 3461 - assignment 2.pdf"
-          src="/education/eecs 3461 - assignment 2.pdf"
+          id="education/eecs-3461-assignment-2.pdf"
+          src="/education/eecs-3461-assignment-2.pdf"
           width="100%"
           height="1000em"
         />
