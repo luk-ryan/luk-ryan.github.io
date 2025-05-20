@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonBack from "../../ButtonBack";
+import ButtonBack from "../../../components/ButtonBack";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 

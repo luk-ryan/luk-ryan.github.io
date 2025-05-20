@@ -1,6 +1,6 @@
 import React from "react";
-import CardLink from "../CardLink";
-import ButtonBack from "../ButtonBack";
+import CardLink from "../../components/CardLink";
+import ButtonBack from "../../components/ButtonBack";
 
 const Hobbies = () => {
   return (

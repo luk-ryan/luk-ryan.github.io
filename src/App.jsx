@@ -1,23 +1,26 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./index.css";
+import Home from "./pages/home/Home";
+import Resume from "./pages/resume/Resume";
+import Contact from "./pages/contact/Contact";
+
+import Projects from "./pages/projects/Projects";
+import ProjectDetail from "./pages/projects/ProjectDetail";
+
+import AboutMe from "./pages/about-me/AboutMe";
+import Hobbies from "./pages/about-me/Hobbies";
+import Piano from "./pages/about-me/hobbies/Piano";
+import Karate from "./pages/about-me/hobbies/Karate";
+import Tricking from "./pages/about-me/hobbies/Tricking";
+import Education from "./pages/about-me/Education";
+import EECS3461 from "./pages/about-me/education/EECS3461";
+import EECS3401 from "./pages/about-me/education/EECS3401";
+import EECS4413 from "./pages/about-me/education/EECS4413";
+import EECS4443 from "./pages/about-me/education/EECS4443";
+
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import Home from "./components/pages/Home";
-import AboutMe from "./components/pages/AboutMe";
-import Contact from "./components/pages/Contact";
-import Projects from "./components/pages/Projects";
-import ProjectDetail from "./components/projects/ProjectDetail";
-import Resume from "./components/pages/Resume";
 import ScrollToTop from "./components/ScrollToTop";
-import Education from "./components/about-me/Education";
-import Hobbies from "./components/about-me/Hobbies";
-import Piano from "./components/about-me/hobbies/Piano";
-import Karate from "./components/about-me/hobbies/Karate";
-import Tricking from "./components/about-me/hobbies/Tricking";
-import EECS3461 from "./components/about-me/education/EECS3461";
-import EECS3401 from "./components/about-me/education/EECS3401";
-import EECS4413 from "./components/about-me/education/EECS4413";
-import EECS4443 from "./components/about-me/education/EECS4443";
 
 function App() {
   return (

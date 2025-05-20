@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonBack from "../../ButtonBack";
+import ButtonBack from "../../../components/ButtonBack";
 
 const Piano = () => {
   return (
