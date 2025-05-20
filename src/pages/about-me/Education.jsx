@@ -1,7 +1,7 @@
 import React from "react";
-import CardLink from "../CardLink";
-import ButtonBack from "../ButtonBack";
 import Course from "./education/Course";
+import ButtonBack from "../../components/ButtonBack";
+import CardLink from "../../components/CardLink";
 
 const Education = () => {
   // Dictionary of theory-based courses

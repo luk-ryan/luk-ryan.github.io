@@ -1,9 +1,9 @@
 // src/pages/ProjectDetail.js
 import React from "react";
 import { useParams } from "react-router-dom";
-import ButtonBack from "../ButtonBack";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import ButtonBack from "../../components/ButtonBack";
 
 const ProjectDetail = () => {
   const { projectTitle } = useParams();
