@@ -1,7 +1,7 @@
 import React from "react";
-import ButtonBack from "../../ButtonBack";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import ButtonBack from "../../../components/ButtonBack";
 
 const EECS3401 = () => {
   return (

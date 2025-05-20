@@ -1,5 +1,5 @@
 import React from "react";
-import CardLink from "../CardLink";
+import CardLink from "../../components/CardLink";
 
 const Home = () => {
   return (

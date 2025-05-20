@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import ButtonBack from "../ButtonBack";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import ButtonBack from "../../components/ButtonBack";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
