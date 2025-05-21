@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <p>&copy; {new Date().getFullYear()} Ryan Luk</p>
-        <ul className="social-links">
+        <ul className="footer-links">
           <li>
             <a
               href="https://linkedin.com/in/ryan-k-luk"
