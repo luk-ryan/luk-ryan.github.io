@@ -1,0 +1,181 @@
+/* base.css - Base global styles */
+
+@import "./variables.css";
+@import "./reset.css";
+
+/* Body and html base styles */
+html {
+  font-size: 100%; /* Ensures 1rem = 16px */
+  scroll-behavior: smooth;
+  background-color: var(--background-color);
+  color: var(--main-text-color);
+  font-family: var(--font-family-base);
+}
+
+body {
+  margin: 0;
+  font-size: var(--font-size-1);
+  line-height: 1.6;
+  background-color: var(--background-color);
+  color: var(--main-text-color);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  color: var(--main-text-color);
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: var(--font-size-6);
+}
+h2 {
+  font-size: var(--font-size-5);
+}
+h3 {
+  font-size: var(--font-size-4);
+}
+h4 {
+  font-size: var(--font-size-3);
+}
+h5 {
+  font-size: var(--font-size-2);
+}
+h6 {
+  font-size: var(--font-size-1);
+}
+
+/* Paragraphs and text */
+p {
+  margin-bottom: 1rem;
+  color: var(--main-text-color);
+}
+
+/* Links */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+/* Buttons */
+button {
+  padding: 0.5em 1em;
+  background-color: var(--main-color);
+  color: var(--secondary-text-color);
+  border: none;
+  border-radius: 4px;
+  font-size: var(--font-size-2);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-hover);
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* base.css */
+/* @import "./variables.css";
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+.main-content {
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-6);
+}
+
+h2 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-5);
+}
+
+h3 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-4);
+}
+
+h4 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-3);
+}
+
+h5 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-2);
+}
+
+p {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-1);
+}
+
+
+
+.introduction {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 5%;
+  padding-left: 15%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  background-color: var(--main-color);
+  text-align: left;
+}
+
+.introduction h1 {
+  font-size: var(--font-xlarge);
+  font-weight: bold;
+}
+
+.introduction p {
+  font-size: var(--font-small);
+  color: var(--main-text-color);
+  line-height: 1.5;
+  margin: 0;
+} */
