@@ -1,8 +1,76 @@
 /* variables.css - CSS Custom Properties for global styles */
 
 :root {
+  /* === Color Scale === */
+  --color-red-100: #ffeaea; /* very light red / background highlight */
+  --color-red-200: #f5bcbc; /* soft pink */
+  --color-red-300: #e68c8c; /* light red */
+  --color-red-400: #d65f5f; /* mid red */
+  --color-red-500: #bc3e3e; /* your main red */
+  --color-red-600: #9e3232; /* deeper red, good for hover on 500 */
+  --color-red-700: #760000; /* accent hover */
+  --color-red-800: #4f0000; /* your accent */
+  --color-red-900: #3e0301; /* your navbar / darkest red */
+
+  --color-gray-100: #f5f5f5;
+  --color-gray-200: #e0e0e0;
+  --color-gray-300: #c0c0c0;
+  --color-gray-400: #a19292;
+  --color-gray-800: #333;
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  /* === Semantic Colors === */
+  --color-primary: var(--color-red-500);
+  --color-primary-hover: var(--color-red-600);
+  --color-accent: var(--color-red-800);
+  --color-accent-hover: var(--color-red-700);
+  --color-background: var(--color-gray-400);
+  --color-navbar: var(--color-red-900);
+  --color-navbar-hover: var(--color-red-800);
+  --color-footer-bg: var(--color-gray-800);
+  --color-text: var(--color-black);
+  --color-text-inverse: var(--color-white);
+  --color-text-muted: var(--color-gray-300);
+  --color-hover-muted: var(--color-gray-200);
+
+  /* === Font Families === */
+  --font-family-base: Arial, sans-serif;
+  --font-family-heading: Arial, sans-serif;
+
+  /* === Font Sizes (Scaled Naming) === */
+  --font-size-50: 0.75rem; /* XS */
+  --font-size-100: 0.875rem; /* SM */
+  --font-size-200: 1rem; /* Base, h6 */
+  --font-size-300: 1.2rem; /* h5 */
+  --font-size-400: 1.44rem; /* h4 */
+  --font-size-500: 1.728rem; /* h3 */
+  --font-size-600: 2.074rem; /* h2 */
+  --font-size-700: 2.488rem; /* h1 */
+  --font-size-800: 3.157rem;
+  --font-size-900: 4.209rem; /* 3XL */
+}
+
+/* === Responsive Typography Scale for Larger Screens === */
+@media screen and (min-width: 800px) {
+  :root {
+    --font-size-50: 0.75rem;
+    --font-size-100: 0.875rem;
+    --font-size-200: 1rem;
+    --font-size-300: 1.333rem;
+    --font-size-400: 1.777rem;
+    --font-size-500: 2.369rem;
+    --font-size-600: 3.157rem;
+    --font-size-700: 4.209rem;
+    --font-size-800: 5.61rem;
+    --font-size-900: 7.478rem;
+  }
+}
+
+/* root {
   /* Color Variables */
-  --main-color: #bc3e3e;
+/*  --main-color: #bc3e3e;
   --background-color: #a19292;
   --accent-color: #4f0000;
   --navbar-color: #3e0301;
@@ -17,22 +85,22 @@
   --font-family-heading: Arial, sans-serif;
 
   /* scale for 1.2 */
-  --font-size-1: 1rem;
+/*  --font-size-1: 1rem;
   --font-size-2: 1.2rem;
   --font-size-3: 1.44rem;
   --font-size-4: 1.728rem;
   --font-size-5: 2.074rem;
   --font-size-6: 2.488rem;
-}
+} */
 
-@media screen and (min-width: 800px) {
+/* media screen and (min-width: 800px) {
   :root {
     /* scale for 1.33 */
-    --font-size-1: 1rem;
+/*    --font-size-1: 1rem;
     --font-size-2: 1.333rem;
     --font-size-3: 1.777rem;
     --font-size-4: 2.369rem;
     --font-size-5: 3.157rem;
     --font-size-6: 4.209rem;
   }
-}
+} */
