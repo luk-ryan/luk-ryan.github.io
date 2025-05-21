@@ -22,5 +22,5 @@
 
 .footer-links a:hover {
   text-decoration: underline;
-  color: var(--color-hover-muted);
+  color: var(--color-text-muted);
 }

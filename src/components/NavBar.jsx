@@ -10,11 +10,10 @@ const NavBar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  // Close the mobile menu if the screen width is resized above 70rem
+  // Close the mobile menu if the screen width is resized above 800px
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 1120) {
-        // 70rem in pixels
+      if (window.innerWidth > 800) {
         setIsMobileMenuOpen(false);
       }
     };
