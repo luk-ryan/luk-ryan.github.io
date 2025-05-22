@@ -1,14 +1,12 @@
 import React from "react";
 import ButtonBack from "../../../components/ButtonBack";
+import Header from "../../../components/Header";
 
 const Karate = () => {
   return (
     <>
-      <div className="introduction">
-        <h1>About Me</h1>
-        <p>This is Me!</p>
-        <ButtonBack link={"/about/hobbies"} />
-      </div>
+      <Header title="About Me" description="This is Me!" />
+
       <div className="content about-me">
         <h2>Karate</h2>
         <p>

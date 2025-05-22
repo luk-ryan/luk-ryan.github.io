@@ -2,6 +2,7 @@ import React from "react";
 import Course from "./education/Course";
 import ButtonBack from "../../components/ButtonBack";
 import CardLink from "../../components/CardLink";
+import Header from "../../components/Header";
 
 const Education = () => {
   // Dictionary of theory-based courses
@@ -41,14 +42,12 @@ const Education = () => {
 
   return (
     <>
-      <div className="header">
-        <h1>Education</h1>
-        <p>
-          Here, I go over some of the courses I've completed and different
-          topics I've learned.
-        </p>
-        <ButtonBack link={"/about"} />
-      </div>
+      <Header
+        title="Education"
+        description="Here, I go over some of the courses I've completed and different
+          topics I've learned."
+      />
+
       <div className="content" style={{ marginBottom: 0 }}>
         <p>
           I am currently in my last year of studying Computer Science at York

@@ -2,20 +2,19 @@ import React from "react";
 import ButtonBack from "../../../components/ButtonBack";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import Header from "../../../components/Header";
 
 const EECS3401 = () => {
   return (
     <>
-      <div className="introduction">
-        <h1>EECS 4443: Mobile User Interfaces</h1>
-        <p>
-          Fourth year course that focuses on mobile app development, primarily
+      <Header
+        title="EECS 4443: Mobile User Interfaces"
+        description="Fourth year course that focuses on mobile app development, primarily
           with on user interfaces that include touch, multi-touch, vibration,
           device motion, position, and orientation, environment sensing, video
-          capture, and audio capture.
-        </p>
-        <ButtonBack link={"/about/education"} />
-      </div>
+          capture, and audio capture."
+      />
+
       <div className="content">
         <p>
           In this course, we learned about mobile app development using Java in

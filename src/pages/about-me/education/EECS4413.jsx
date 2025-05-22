@@ -2,19 +2,18 @@ import React from "react";
 import ButtonBack from "../../../components/ButtonBack";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import Header from "../../../components/Header";
 
 const EECS3401 = () => {
   return (
     <>
-      <div className="introduction">
-        <h1>EECS 4413: Building E-Commerce Systems</h1>
-        <p>
-          Fourth year course that focuses on server frameworks, client
+      <Header
+        title="EECS 4413: Building E-Commerce Systems"
+        description="Fourth year course that focuses on server frameworks, client
           technologies, messaging protocols, security, performance, and best
-          practices through hands-on projects.
-        </p>
-        <ButtonBack link={"/about/education"} />
-      </div>
+          practices through hands-on projects."
+      />
+
       <div className="content">
         <p>
           In this course, we learned about different ways of implementing
