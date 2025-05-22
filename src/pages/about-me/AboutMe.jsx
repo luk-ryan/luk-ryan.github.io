@@ -1,15 +1,13 @@
 import React from "react";
 import CardLink from "../../components/CardLink";
 import ButtonBack from "../../components/ButtonBack";
+import Header from "../../components/Header";
 
 const AboutMe = () => {
   return (
     <>
-      <div className="introduction">
-        <h1>About Me</h1>
-        <p>This is Me!</p>
-        <ButtonBack link={"/"} />
-      </div>
+      <Header title="About Me" description="This is Me!" />
+
       <div className="card-container">
         <CardLink
           title="Education"

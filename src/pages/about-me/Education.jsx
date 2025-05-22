@@ -41,7 +41,7 @@ const Education = () => {
 
   return (
     <>
-      <div className="introduction">
+      <div className="header">
         <h1>Education</h1>
         <p>
           Here, I go over some of the courses I've completed and different

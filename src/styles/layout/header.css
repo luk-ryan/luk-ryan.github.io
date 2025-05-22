@@ -1,0 +1,10 @@
+.header {
+  margin: 0;
+  padding: 8rem;
+  background-color: var(--color-primary);
+  font-size: var(--font-size-300);
+}
+
+.header-home {
+  text-align: center;
+}

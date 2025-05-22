@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import ButtonBack from "../../components/ButtonBack";
+import Header from "../../components/Header";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -86,8 +87,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="introduction">
-        <h1>Contact Me</h1>
+      <Header title="Contact Me">
         <p>
           Click to copy my email:{" "}
           <span className="text-link" onClick={copyToClipboard}>
@@ -108,7 +108,8 @@ const Contact = () => {
           .
         </p>
         <ButtonBack link={"/"} />
-      </div>
+      </Header>
+
       <div className="contact">
         {successMessage && (
           <p>Thank you for your message, I will get back to you soon!</p>

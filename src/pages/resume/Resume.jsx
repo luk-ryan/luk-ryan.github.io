@@ -1,17 +1,16 @@
 import React from "react";
 import ButtonBack from "../../components/ButtonBack";
+import Header from "../../components/Header";
 
 const Resume = () => {
   return (
     <>
-      <div className="introduction">
-        <h1>Work Experience</h1>
-        <p>
-          Here is all of my work history, my resume is also available for
-          download below.
-        </p>
-        <ButtonBack link={"/"} />
-      </div>
+      <Header
+        title="Work Experience"
+        description="Here is all of my work history, my resume is also available for
+          download below."
+      />
+
       <div className="content resume">
         <div className="job">
           <div className="job-header">

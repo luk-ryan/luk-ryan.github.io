@@ -5,7 +5,7 @@ import ButtonBack from "../../components/ButtonBack";
 const Hobbies = () => {
   return (
     <>
-      <div className="introduction">
+      <div className="header">
         <h1>Hobbies and Interests</h1>
         <p>
           I really enjoy learning new things in general. Here, you can see all

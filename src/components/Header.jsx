@@ -1,11 +1,12 @@
 import React from "react";
 
-const Header = ({ title, description }) => {
+const Header = ({ title, description, children, className = "" }) => {
   return (
-    <div className="header">
+    <header className={`header ${className}`}>
       <h1>{title}</h1>
       <p>{description}</p>
-    </div>
+      {children}
+    </header>
   );
 };
 

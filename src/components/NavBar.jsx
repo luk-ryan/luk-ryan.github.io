@@ -24,9 +24,9 @@ const NavBar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">
-        <Link to="/">Ryan Luk</Link>
-      </div>
+      <Link className="logo" to="/">
+        Ryan Luk
+      </Link>
       <button className="hamburger" onClick={toggleMobileMenu}>
         ☰
       </button>

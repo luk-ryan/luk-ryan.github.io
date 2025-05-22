@@ -10,10 +10,6 @@
 }
 
 .navbar .logo {
-  height: 100%;
-}
-
-.navbar .logo a {
   display: block;
   align-content: center;
   height: 100%;
@@ -23,7 +19,7 @@
   padding-left: 0.5rem;
 }
 
-.navbar .logo a:hover {
+.navbar .logo:hover {
   color: var(--color-text-muted);
 }
 

@@ -1,18 +1,19 @@
 import React from "react";
 import CardLink from "../../components/CardLink";
+import Header from "../../components/Header";
 
 const Home = () => {
   return (
     <>
-      <div className="home-introduction">
-        <h1>Welcome</h1>
-        <p>
-          My name is Ryan Luk, a professional programmer and student. I'm in my
+      <Header
+        className="header-home"
+        title="Welcome"
+        description="My name is Ryan Luk, a professional programmer and student. I'm in my
           fourth year of studying Computer Science at York University. Most of
           my experience is in any kind of web development, but I would also be
-          interested in a variety of programming projects.
-        </p>
-      </div>
+          interested in a variety of programming projects."
+      />
+
       <div className="card-container">
         <CardLink
           title="About Me"
