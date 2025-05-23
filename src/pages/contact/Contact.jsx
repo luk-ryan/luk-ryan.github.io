@@ -109,7 +109,7 @@ const Contact = () => {
         </p>
       </Header>
 
-      <div className="contact">
+      <div className="wrapper">
         {successMessage && (
           <p>Thank you for your message, I will get back to you soon!</p>
         )}

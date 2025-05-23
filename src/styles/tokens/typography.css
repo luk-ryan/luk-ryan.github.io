@@ -21,15 +21,15 @@
 /* === Responsive Typography Scale for Larger Screens === */
 @media screen and (min-width: 800px) {
   :root {
-    --font-size-50: 0.75rem;
-    --font-size-100: 0.875rem;
-    --font-size-200: 1rem;
-    --font-size-300: 1.333rem;
-    --font-size-400: 1.777rem;
-    --font-size-500: 2.369rem;
-    --font-size-600: 3.157rem;
-    --font-size-700: 4.209rem;
-    --font-size-800: 5.61rem;
-    --font-size-900: 7.478rem;
+    --font-size-50: 0.844rem; /* XS */
+    --font-size-100: 0.953rem; /* SM */
+    --font-size-200: 1.125rem; /* Base, h6 */
+    --font-size-300: 1.406rem; /* h5 */
+    --font-size-400: 1.758rem; /* h4 */
+    --font-size-500: 2.197rem; /* h3 */
+    --font-size-600: 2.746rem; /* h2 */
+    --font-size-700: 3.433rem; /* h1 */
+    --font-size-800: 4.291rem;
+    --font-size-900: 5.364rem; /* 3XL */
   }
 }

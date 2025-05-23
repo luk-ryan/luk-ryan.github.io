@@ -1,8 +1,11 @@
 .header {
   margin: 0;
-  margin-top: 2rem;
-  padding: min(10vw, 8rem);
+  margin-top: 4rem;
+  padding: min(5vw, 8rem);
   background-color: var(--color-primary);
+}
+
+.header p {
   font-size: var(--font-size-300);
 }
 

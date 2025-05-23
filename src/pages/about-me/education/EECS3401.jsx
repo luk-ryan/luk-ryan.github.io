@@ -14,7 +14,7 @@ const EECS3401 = () => {
           reasoning under uncertainty, etc"
       />
 
-      <div className="content">
+      <div className="wrapper">
         <p>
           In this course, we learned some theory behind various machine learning
           algorithms, such as linear regression, support vector machine (SVM),

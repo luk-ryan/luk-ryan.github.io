@@ -11,7 +11,7 @@ const EECS3461 = () => {
           mechanisms to create and prototype them"
       />
 
-      <div className="content">
+      <div className="wrapper">
         <p>
           The biggest component of this course was to decide on a problem and
           come up with a design solution for this problem. As a team of four

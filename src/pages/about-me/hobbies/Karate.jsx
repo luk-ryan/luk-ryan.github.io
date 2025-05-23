@@ -7,7 +7,7 @@ const Karate = () => {
     <>
       <Header title="About Me" description="This is Me!" />
 
-      <div className="content about-me">
+      <div className="wrapper about-me">
         <h2>Karate</h2>
         <p>
           I started karate when I was around eight, moving up through each belt

@@ -14,7 +14,7 @@ const EECS3401 = () => {
           practices through hands-on projects."
       />
 
-      <div className="content">
+      <div className="wrapper">
         <p>
           In this course, we learned about different ways of implementing
           software design patterns into architecture for building e-commerce web

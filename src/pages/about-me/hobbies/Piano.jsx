@@ -7,7 +7,7 @@ const Piano = () => {
     <>
       <Header title="About Me" description="This is Me!" />
 
-      <div className="content about-me">
+      <div className="wrapper about-me">
         <h2>Piano</h2>
         <p>
           I started learning piano when I was four, beginning with group lessons

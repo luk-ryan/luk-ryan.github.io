@@ -2,8 +2,8 @@
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 20rem);
-  gap: 2rem;
-  margin: 2rem;
+  gap: clamp(2rem, 4vw, 4rem);
+  margin: 4rem;
 }
 
 .card-link {

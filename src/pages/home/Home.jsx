@@ -14,27 +14,29 @@ const Home = () => {
           interested in a variety of programming projects."
       />
 
-      <div className="card-wrapper">
-        <CardLink
-          title="About Me"
-          description="Learn more about my personal journey, both educationally and outside of school."
-          link="/about"
-        />
-        <CardLink
-          title="My Projects"
-          description="Showcase of projects I've done in the past."
-          link="/projects"
-        />
-        <CardLink
-          title="Resume"
-          description="Record of all my work history."
-          link="/resume"
-        />
-        <CardLink
-          title="Contact Me"
-          description="Have any questions or feedback? Feel free to get in touch with me!"
-          link="/contact"
-        />
+      <div className="wide-wrapper">
+        <div className="card-wrapper">
+          <CardLink
+            title="About Me"
+            description="Learn more about my personal journey, both educationally and outside of school."
+            link="/about"
+          />
+          <CardLink
+            title="My Projects"
+            description="Showcase of projects I've done in the past."
+            link="/projects"
+          />
+          <CardLink
+            title="Resume"
+            description="Record of all my work history."
+            link="/resume"
+          />
+          <CardLink
+            title="Contact Me"
+            description="Have any questions or feedback? Feel free to get in touch with me!"
+            link="/contact"
+          />
+        </div>
       </div>
     </>
   );

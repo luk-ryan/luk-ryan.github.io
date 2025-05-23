@@ -45,7 +45,7 @@ const Projects = () => {
         description="Here are projects I've done in the past."
       />
 
-      <div className="content projects">
+      <div className="wrapper">
         {projects.map((project) => (
           <ProjectCard
             key={project.id}

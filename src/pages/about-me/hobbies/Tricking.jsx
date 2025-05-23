@@ -7,7 +7,7 @@ const Tricking = () => {
     <>
       <Header title="About Me" description="This is Me!" />
 
-      <div className="content about-me">
+      <div className="wrapper about-me">
         <h2>Tricking</h2>
         <p>
           Tricking is a mix of martial arts, gymnastics, kicks, and flips, all

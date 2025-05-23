@@ -11,7 +11,7 @@ const Resume = () => {
           download below."
       />
 
-      <div className="content resume">
+      <div className="wrapper resume">
         <div className="job">
           <div className="job-header">
             <div className="job-information">

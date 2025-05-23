@@ -15,7 +15,7 @@ const EECS3401 = () => {
           capture, and audio capture."
       />
 
-      <div className="content">
+      <div className="wrapper">
         <p>
           In this course, we learned about mobile app development using Java in
           Android Studio, primarily focusing on different interactions with

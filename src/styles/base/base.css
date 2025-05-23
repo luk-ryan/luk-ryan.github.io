@@ -61,6 +61,7 @@ h6 {
 
 /* Paragraphs and text */
 p {
+  font-size: var(--font-size-200);
   margin-bottom: 1rem;
   color: var(--color-text);
 }
@@ -97,9 +98,14 @@ button:hover {
 }
 
 .wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  max-width: 1080px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.wide-wrapper {
+  max-width: 1620px;
+  margin: auto;
 }
 
 .hidden {
