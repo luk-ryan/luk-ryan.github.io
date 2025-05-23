@@ -1,6 +1,7 @@
 .header {
   margin: 0;
-  padding: 8rem;
+  margin-top: 2rem;
+  padding: min(10vw, 8rem);
   background-color: var(--color-primary);
   font-size: var(--font-size-300);
 }

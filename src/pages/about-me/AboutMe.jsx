@@ -8,7 +8,7 @@ const AboutMe = () => {
     <>
       <Header title="About Me" description="This is Me!" />
 
-      <div className="card-container">
+      <div className="card-wrapper">
         <CardLink
           title="Education"
           description="Click here to learn about my educational background."

@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import ButtonBack from "../../components/ButtonBack";
+import Header from "../../components/Header";
 
 const ProjectDetail = () => {
   const { projectTitle } = useParams();
@@ -11,24 +12,21 @@ const ProjectDetail = () => {
   if (projectTitle == "student-management-system") {
     return (
       <>
-        <div className="introduction">
-          <h1>Student Management System</h1>
-          <p>
-            A website that helps students to keep track of their grades in
-            school.
-          </p>
-          <p>
-            <a
-              className="text-link"
-              href="https://github.com/luk-ryan/StudentManagementSystemV2"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Source Code <FontAwesomeIcon icon={faGithub} />
-            </a>
-          </p>
-          <ButtonBack link={"/projects"} />
-        </div>
+        <Header
+          title="Student Management System"
+          description="A website that helps students to keep track of their grades in
+            school."
+        >
+          <a
+            className="text-link"
+            href="https://github.com/luk-ryan/StudentManagementSystemV2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Source Code <FontAwesomeIcon icon={faGithub} />
+          </a>
+        </Header>
+
         <div className="content">
           <h2>Overview</h2>
           <p>

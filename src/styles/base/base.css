@@ -97,9 +97,9 @@ button:hover {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .hidden {

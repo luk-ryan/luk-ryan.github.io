@@ -6,3 +6,5 @@
 @import "./layout/header.css";
 @import "./layout/footer.css";
 @import "./layout/navbar.css";
+
+@import "./components/cardlink.css";

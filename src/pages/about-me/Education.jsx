@@ -48,7 +48,7 @@ const Education = () => {
           topics I've learned."
       />
 
-      <div className="content" style={{ marginBottom: 0 }}>
+      <div className="content wrapper" style={{ marginBottom: 0 }}>
         <p>
           I am currently in my last year of studying Computer Science at York
           University. One of the most satisfying things for me is when I am able
@@ -56,7 +56,7 @@ const Education = () => {
         </p>
         <h2>Project-Based Courses:</h2>
       </div>
-      <div className="card-container" style={{ margin: 0 }}>
+      <div className="card-wrapper" style={{ margin: 0 }}>
         <CardLink
           title="EECS 4443"
           description="Mobile User Interfaces"
@@ -78,7 +78,7 @@ const Education = () => {
           link="/about/education/EECS3461"
         />
       </div>
-      <div className="content" style={{ marginTop: "3em" }}>
+      <div className="content wrapper" style={{ marginTop: "3em" }}>
         <h2>Theory-Based Courses:</h2>
         {Object.entries(theoryCourses).map(([courseCode, courseDetails]) => (
           <Course

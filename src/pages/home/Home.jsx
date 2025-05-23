@@ -14,7 +14,7 @@ const Home = () => {
           interested in a variety of programming projects."
       />
 
-      <div className="card-container">
+      <div className="card-wrapper">
         <CardLink
           title="About Me"
           description="Learn more about my personal journey, both educationally and outside of school."

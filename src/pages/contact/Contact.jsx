@@ -107,7 +107,6 @@ const Contact = () => {
           </a>
           .
         </p>
-        <ButtonBack link={"/"} />
       </Header>
 
       <div className="contact">

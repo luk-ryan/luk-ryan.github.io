@@ -11,7 +11,7 @@ const Hobbies = () => {
         description="I really enjoy learning new things in general. Here, you can see all
           of my main hobbies and interests outside of programming."
       />
-      <div className="card-container">
+      <div className="card-wrapper">
         <CardLink
           title="Piano"
           description="Click here to learn more about my piano journey."
