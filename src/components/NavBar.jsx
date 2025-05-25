@@ -4,7 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 const NavBar = () => {
   const path = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   // Toggle the mobile menu
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -22,6 +21,13 @@ const NavBar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const closeMenu = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setIsMobileMenuOpen(false);
+    }, 300);
+  };
+
   return (
     <nav className="navbar">
       <Link className="logo" to="/">
@@ -34,6 +40,7 @@ const NavBar = () => {
         <li>
           <Link
             to="/about"
+            onClick={closeMenu}
             className={path.pathname.startsWith("/about") ? "active" : ""}
           >
             About Me
@@ -42,6 +49,7 @@ const NavBar = () => {
         <li>
           <Link
             to="/projects"
+            onClick={closeMenu}
             className={path.pathname.startsWith("/projects") ? "active" : ""}
           >
             Projects
@@ -50,6 +58,7 @@ const NavBar = () => {
         <li>
           <Link
             to="/resume"
+            onClick={closeMenu}
             className={path.pathname === "/resume" ? "active" : ""}
           >
             Resume
@@ -58,6 +67,7 @@ const NavBar = () => {
         <li>
           <Link
             to="/contact"
+            onClick={closeMenu}
             className={path.pathname === "/contact" ? "active" : ""}
           >
             Contact Me
