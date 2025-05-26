@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import ButtonBack from "../../components/ButtonBack";
 import Header from "../../components/Header";
+import TextLink from "../../components/TextLink";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -22,6 +23,7 @@ const Contact = () => {
   // Handle copying email to clipboard
   const copyToClipboard = () => {
     navigator.clipboard.writeText(emailAddress).then(() => {
+      console.log("clipboard button click");
       setCopyMessage("Email copied to clipboard!");
       setTimeout(() => setCopyMessage(""), 2000);
     });
@@ -90,21 +92,14 @@ const Contact = () => {
       <Header title="Contact Me">
         <p>
           Click to copy my email:{" "}
-          <span className="text-link" onClick={copyToClipboard}>
-            {emailAddress}
-          </span>
+          <TextLink onClick={copyToClipboard}>{emailAddress}</TextLink>
         </p>
         {copyMessage && <p style={{ color: "green" }}>{copyMessage}</p>}
         <p>
           Or get in touch with me through{" "}
-          <a
-            className="text-link"
-            href="https://linkedin.com/in/ryan-k-luk"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <TextLink href="https://linkedin.com/in/ryan-k-luk">
             LinkedIn <FontAwesomeIcon icon={faLinkedin} />
-          </a>
+          </TextLink>
           .
         </p>
       </Header>

@@ -22,3 +22,7 @@
   border-color: var(--color-accent);
   outline: none;
 }
+
+.contact-form button {
+  width: 100%;
+}
