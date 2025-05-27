@@ -3,7 +3,6 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import ButtonBack from "../../components/ButtonBack";
 import Header from "../../components/Header";
 
 const ProjectDetail = () => {

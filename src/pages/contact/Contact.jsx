@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import ButtonBack from "../../components/ButtonBack";
+import ButtonBack from "../../components/Button";
 import Header from "../../components/Header";
 import TextLink from "../../components/TextLink";
 

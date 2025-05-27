@@ -1,6 +1,5 @@
 import React from "react";
 import CardLink from "../../components/CardLink";
-import ButtonBack from "../../components/ButtonBack";
 import Header from "../../components/Header";
 
 const AboutMe = () => {
@@ -8,7 +7,7 @@ const AboutMe = () => {
     <>
       <Header title="About Me" description="This is Me!" />
 
-      <div className="card-wrapper">
+      <div className="card-link-wrapper">
         <CardLink
           title="Education"
           description="Click here to learn about my educational background."

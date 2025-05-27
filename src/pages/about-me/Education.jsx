@@ -1,6 +1,5 @@
 import React from "react";
 import Course from "./education/Course";
-import ButtonBack from "../../components/ButtonBack";
 import CardLink from "../../components/CardLink";
 import Header from "../../components/Header";
 
@@ -58,7 +57,7 @@ const Education = () => {
       </div>
 
       <div className="wide-wrapper">
-        <div className="card-wrapper" style={{ margin: 0 }}>
+        <div className="card-link-wrapper" style={{ margin: 0 }}>
           <CardLink
             title="EECS 4443"
             description="Mobile User Interfaces"
@@ -82,7 +81,7 @@ const Education = () => {
         </div>
       </div>
 
-      <div className="wrapper" style={{ marginTop: "3em" }}>
+      <div className="wrapper">
         <h2>Theory-Based Courses:</h2>
         {Object.entries(theoryCourses).map(([courseCode, courseDetails]) => (
           <Course

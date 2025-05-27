@@ -1,6 +1,5 @@
 import React from "react";
 import CardLink from "../../components/CardLink";
-import ButtonBack from "../../components/ButtonBack";
 import Header from "../../components/Header";
 
 const Hobbies = () => {

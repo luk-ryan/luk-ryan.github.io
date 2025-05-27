@@ -1,4 +1,4 @@
-.card-wrapper {
+.card-link-wrapper {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 20rem);
