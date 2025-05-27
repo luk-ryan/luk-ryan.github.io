@@ -93,10 +93,6 @@ button:hover {
 }
 
 /* Utility classes */
-.text-center {
-  text-align: center;
-}
-
 .wrapper {
   max-width: 1080px;
   margin: auto;
@@ -106,10 +102,6 @@ button:hover {
 .wide-wrapper {
   max-width: 1620px;
   margin: auto;
-}
-
-.hidden {
-  display: none !important;
 }
 
 /* base.css */

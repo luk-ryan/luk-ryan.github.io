@@ -10,6 +10,7 @@
 @import "./components/info-card.css";
 @import "./components/cardlink.css";
 @import "./components/textlink.css";
-@import "./components/buttonlink.css";
+@import "./components/button.css";
 
 @import "./pages/contact.css";
+@import "./utils/utils.css";

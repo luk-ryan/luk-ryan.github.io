@@ -5,12 +5,12 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const ProjectCard = ({ name, description, link, githubLink }) => {
   return (
-    <div className="project-card">
-      <div className="project-header">
-        <h2>{name}</h2>
+    <div className="info-card project-card">
+      <div className="project-card-header">
+        <h1>{name}</h1>
         <p>{description}</p>
       </div>
-      <div className="project-links">
+      <div className="project-card-links">
         <Link className="button-link" to={link}>
           View Details
         </Link>

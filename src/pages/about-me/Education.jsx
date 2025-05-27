@@ -47,7 +47,7 @@ const Education = () => {
           topics I've learned."
       />
 
-      <div className="wrapper" style={{ marginBottom: 0 }}>
+      <div className="wrapper">
         <p>
           I am currently in my last year of studying Computer Science at York
           University. One of the most satisfying things for me is when I am able
@@ -57,7 +57,7 @@ const Education = () => {
       </div>
 
       <div className="wide-wrapper">
-        <div className="card-link-wrapper" style={{ margin: 0 }}>
+        <div className="card-link-wrapper margin-block-reset">
           <CardLink
             title="EECS 4443"
             description="Mobile User Interfaces"

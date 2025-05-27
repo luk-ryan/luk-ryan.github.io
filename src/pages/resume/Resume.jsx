@@ -31,8 +31,10 @@ const Resume = () => {
       />
 
       <div className="wrapper">
-        <JobCard {...jobs[0]} />
-        <div className="text-center">
+        <div className="info-card-list">
+          <JobCard {...jobs[0]} />
+        </div>
+        <div className="text-center margin-block-2">
           <h1>My Resume</h1>
           <a
             href="/resume_software_developer.pdf"

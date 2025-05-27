@@ -10,16 +10,16 @@ const JobCard = ({
   summary,
 }) => {
   return (
-    <div className="info-card-background job-card">
+    <div className="info-card job-card">
       <div className="job-card-header">
-        <div className="job-information">
+        <div>
           <h1>{title}</h1>
           <h2>
             <TextLink href={companyLink}>{companyText}</TextLink>
           </h2>
           <h3>{duration}</h3>
         </div>
-        <div className="job-description">
+        <div>
           <p>{description}</p>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
-import ProjectCard from "./ProjectCard";
+
 import Header from "../../components/Header";
+import ProjectCard from "../../components/ProjectCard";
 
 const Projects = () => {
   const projects = [
@@ -44,7 +45,7 @@ const Projects = () => {
         description="Here are projects I've done in the past."
       />
 
-      <div className="wrapper">
+      <div className="wrapper info-card-list">
         {projects.map((project) => (
           <ProjectCard
             key={project.id}
