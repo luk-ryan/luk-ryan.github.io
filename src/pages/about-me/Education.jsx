@@ -1,7 +1,7 @@
 import React from "react";
 import Course from "./education/Course";
-import ButtonBack from "../../components/ButtonBack";
 import CardLink from "../../components/CardLink";
+import Header from "../../components/Header";
 
 const Education = () => {
   // Dictionary of theory-based courses
@@ -41,15 +41,13 @@ const Education = () => {
 
   return (
     <>
-      <div className="introduction">
-        <h1>Education</h1>
-        <p>
-          Here, I go over some of the courses I've completed and different
-          topics I've learned.
-        </p>
-        <ButtonBack link={"/about"} />
-      </div>
-      <div className="content" style={{ marginBottom: 0 }}>
+      <Header
+        title="Education"
+        description="Here, I go over some of the courses I've completed and different
+          topics I've learned."
+      />
+
+      <div className="wrapper">
         <p>
           I am currently in my last year of studying Computer Science at York
           University. One of the most satisfying things for me is when I am able
@@ -57,29 +55,33 @@ const Education = () => {
         </p>
         <h2>Project-Based Courses:</h2>
       </div>
-      <div className="card-container" style={{ margin: 0 }}>
-        <CardLink
-          title="EECS 4443"
-          description="Mobile User Interfaces"
-          link="/about/education/EECS4443"
-        />
-        <CardLink
-          title="EECS 4413"
-          description="Building E-Commerce Systems"
-          link="/about/education/EECS4413"
-        />
-        <CardLink
-          title="EECS 3401"
-          description="Introduction to AI and Logic Programming"
-          link="/about/education/EECS3401"
-        />
-        <CardLink
-          title="EECS 3461"
-          description="User Interfaces"
-          link="/about/education/EECS3461"
-        />
+
+      <div className="wide-wrapper">
+        <div className="card-link-wrapper margin-block-reset">
+          <CardLink
+            title="EECS 4443"
+            description="Mobile User Interfaces"
+            link="/about/education/EECS4443"
+          />
+          <CardLink
+            title="EECS 4413"
+            description="Building E-Commerce Systems"
+            link="/about/education/EECS4413"
+          />
+          <CardLink
+            title="EECS 3401"
+            description="Introduction to AI and Logic Programming"
+            link="/about/education/EECS3401"
+          />
+          <CardLink
+            title="EECS 3461"
+            description="User Interfaces"
+            link="/about/education/EECS3461"
+          />
+        </div>
       </div>
-      <div className="content" style={{ marginTop: "3em" }}>
+
+      <div className="wrapper">
         <h2>Theory-Based Courses:</h2>
         {Object.entries(theoryCourses).map(([courseCode, courseDetails]) => (
           <Course

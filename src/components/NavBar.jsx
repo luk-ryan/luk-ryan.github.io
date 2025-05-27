@@ -4,17 +4,15 @@ import { Link, useLocation } from "react-router-dom";
 const NavBar = () => {
   const path = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   // Toggle the mobile menu
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  // Close the mobile menu if the screen width is resized above 70rem
+  // Close the mobile menu if the screen width is resized above 800px
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 1120) {
-        // 70rem in pixels
+      if (window.innerWidth > 800) {
         setIsMobileMenuOpen(false);
       }
     };
@@ -23,11 +21,18 @@ const NavBar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const closeMenu = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setIsMobileMenuOpen(false);
+    }, 300);
+  };
+
   return (
     <nav className="navbar">
-      <div className="logo">
-        <Link to="/">Ryan Luk</Link>
-      </div>
+      <Link className="logo" to="/">
+        Ryan Luk
+      </Link>
       <button className="hamburger" onClick={toggleMobileMenu}>
         ☰
       </button>
@@ -35,6 +40,7 @@ const NavBar = () => {
         <li>
           <Link
             to="/about"
+            onClick={closeMenu}
             className={path.pathname.startsWith("/about") ? "active" : ""}
           >
             About Me
@@ -43,6 +49,7 @@ const NavBar = () => {
         <li>
           <Link
             to="/projects"
+            onClick={closeMenu}
             className={path.pathname.startsWith("/projects") ? "active" : ""}
           >
             Projects
@@ -51,6 +58,7 @@ const NavBar = () => {
         <li>
           <Link
             to="/resume"
+            onClick={closeMenu}
             className={path.pathname === "/resume" ? "active" : ""}
           >
             Resume
@@ -59,6 +67,7 @@ const NavBar = () => {
         <li>
           <Link
             to="/contact"
+            onClick={closeMenu}
             className={path.pathname === "/contact" ? "active" : ""}
           >
             Contact Me

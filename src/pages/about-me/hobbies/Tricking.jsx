@@ -1,15 +1,13 @@
 import React from "react";
-import ButtonBack from "../../../components/ButtonBack";
+import ButtonBack from "../../../components/Button";
+import Header from "../../../components/Header";
 
 const Tricking = () => {
   return (
     <>
-      <div className="introduction">
-        <h1>About Me</h1>
-        <p>This is Me!</p>
-        <ButtonBack link={"/about/hobbies"} />
-      </div>
-      <div className="content about-me">
+      <Header title="About Me" description="This is Me!" />
+
+      <div className="wrapper about-me">
         <h2>Tricking</h2>
         <p>
           Tricking is a mix of martial arts, gymnastics, kicks, and flips, all
