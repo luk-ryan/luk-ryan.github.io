@@ -100,7 +100,6 @@ const Contact = () => {
           <TextLink href="https://linkedin.com/in/ryan-k-luk">
             LinkedIn <FontAwesomeIcon icon={faLinkedin} />
           </TextLink>
-          .
         </p>
       </Header>
 
