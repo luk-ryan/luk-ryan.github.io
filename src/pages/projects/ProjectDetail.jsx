@@ -26,7 +26,7 @@ const ProjectDetail = () => {
           </a>
         </Header>
 
-        <div className="content">
+        <div className="wrapper">
           <h2>Overview</h2>
           <p>
             This side project aims to assist students in maintaining
