@@ -21,6 +21,12 @@ const NavBar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const closeMenu = () => {
+    if (isMobileMenuOpen) {
+      setIsMobileMenuOpen(false);
+    }
+  };
+
   return (
     <nav className="navbar">
       <Link className="logo" to="/">
@@ -33,7 +39,7 @@ const NavBar = () => {
         <li>
           <Link
             to="/about"
-            onClick={toggleMobileMenu}
+            onClick={closeMenu}
             className={path.pathname.startsWith("/about") ? "active" : ""}
           >
             About Me
@@ -42,7 +48,7 @@ const NavBar = () => {
         <li>
           <Link
             to="/projects"
-            onClick={toggleMobileMenu}
+            onClick={closeMenu}
             className={path.pathname.startsWith("/projects") ? "active" : ""}
           >
             Projects
@@ -51,7 +57,7 @@ const NavBar = () => {
         <li>
           <Link
             to="/resume"
-            onClick={toggleMobileMenu}
+            onClick={closeMenu}
             className={path.pathname === "/resume" ? "active" : ""}
           >
             Resume
@@ -60,7 +66,7 @@ const NavBar = () => {
         <li>
           <Link
             to="/contact"
-            onClick={toggleMobileMenu}
+            onClick={closeMenu}
             className={path.pathname === "/contact" ? "active" : ""}
           >
             Contact Me
