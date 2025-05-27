@@ -8,5 +8,6 @@
 @import "./layout/navbar.css";
 
 @import "./components/cardlink.css";
-
+@import "./components/textlink.css";
+@import "./components/buttonlink.css";
 @import "./pages/contact.css";
