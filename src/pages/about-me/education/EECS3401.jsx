@@ -1,21 +1,19 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import ButtonBack from "../../../components/ButtonBack";
+import Header from "../../../components/Header";
 
 const EECS3401 = () => {
   return (
     <>
-      <div className="introduction">
-        <h1>EECS 3401: Introduction to AI and Logic Programming</h1>
-        <p>
-          Third year course that examines fundamental concepts in AI: knowledge
+      <Header
+        title="EECS 3401: Introduction to AI and Logic Programming"
+        description="Third year course that examines fundamental concepts in AI: knowledge
           representation and reasoning, search, constraint satisfaction,
-          reasoning under uncertainty, etc
-        </p>
-        <ButtonBack link={"/about/education"} />
-      </div>
-      <div className="content">
+          reasoning under uncertainty, etc"
+      />
+
+      <div className="wrapper">
         <p>
           In this course, we learned some theory behind various machine learning
           algorithms, such as linear regression, support vector machine (SVM),

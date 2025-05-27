@@ -1,6 +1,7 @@
 import React from "react";
-import ProjectCard from "./ProjectCard";
-import ButtonBack from "../../components/ButtonBack";
+
+import Header from "../../components/Header";
+import ProjectCard from "../../components/ProjectCard";
 
 const Projects = () => {
   const projects = [
@@ -39,12 +40,12 @@ const Projects = () => {
 
   return (
     <>
-      <div className="introduction">
-        <h1>Projects</h1>
-        <p>Here are projects I've done in the past.</p>
-        <ButtonBack link={"/"} />
-      </div>
-      <div className="content projects">
+      <Header
+        title="Projects"
+        description="Here are projects I've done in the past."
+      />
+
+      <div className="wrapper info-card-list">
         {projects.map((project) => (
           <ProjectCard
             key={project.id}

@@ -1,18 +1,16 @@
 import React from "react";
-import ButtonBack from "../../../components/ButtonBack";
+import Header from "../../../components/Header";
 
 const EECS3461 = () => {
   return (
     <>
-      <div className="introduction">
-        <h1>EECS 3461: User Interfaces</h1>
-        <p>
-          Third year course that introduces user interfaces and the tools and
-          mechanisms to create and prototype them
-        </p>
-        <ButtonBack link={"/about/education"} />
-      </div>
-      <div className="content">
+      <Header
+        title="EECS 3461: User Interfaces"
+        description="Third year course that introduces user interfaces and the tools and
+          mechanisms to create and prototype them"
+      />
+
+      <div className="wrapper">
         <p>
           The biggest component of this course was to decide on a problem and
           come up with a design solution for this problem. As a team of four
